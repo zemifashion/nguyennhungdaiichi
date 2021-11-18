@@ -15,8 +15,7 @@
     <meta property="og:updated_time" content="2021-03-12T17:18:16+07:00">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Trang Chủ - Dai-ichi HN214">
-    <meta name="twitter:description"
-          content="Trang chủ chính thức của Phòng Kinh Doanh Hà Nội 214 - công ty TNHH Bảo Hiểm Nhân Thọ Dai-ichi Việt Nam. Tư vấn, giải đáp thắc mắc cho khách hàng về Dai-ichi">
+    <meta name="twitter:description" content="Trang chủ chính thức của Phòng Kinh Doanh Hà Nội 214 - công ty TNHH Bảo Hiểm Nhân Thọ Dai-ichi Việt Nam. Tư vấn, giải đáp thắc mắc cho khách hàng về Dai-ichi">
     <script type="application/ld+json" class="rank-math-schema">{
             "@context": "https://schema.org",
             "@graph": [
