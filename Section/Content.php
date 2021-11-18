@@ -1,0 +1,9 @@
+<?php include ("Section/Home/Slider.php")?>
+<?php include ("Section/Home/Covid.php")?>
+<?php include ("Section/Home/OutProduct.php")?>
+<?php include ("Section/Home/Services.php")?>
+<?php include ("Section/Home/Section_4.php")?>
+<?php include ("Section/Home/InTro.php")?>
+<?php include ("Section/Home/TuyenDung.php")?>
+<?php include ("Section/Home/Video.php")?>
+<?php include ("Section/Home/Event.php")?>

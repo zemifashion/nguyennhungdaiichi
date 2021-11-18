@@ -3,7 +3,7 @@
 <?php include ("Head/Head.php")?>
 <body data-rsssl=1>
 <?php include ("Header/Header.php")?>
-<?php include ("Home/Content.php")?>
+<?php include ("Section/Content.php")?>
 <?php include ("Footer/Footer.php")?>
 <?php include ("MenuMobile/MenuMobile.php")?>
 <script src='js/navigation-1.0.0.js' id='aia-navigation-js'></script>

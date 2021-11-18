@@ -20,7 +20,7 @@
                                             src="https://dai-ichi.vn/wp-content/themes/aia/page-templates/img/icons/youtube@2x.png"
                                             alt="youtube"></noscript>
                             </a></li>
-                        <li><a href="https://zalo.me/0879565666"><img
+                        <li><a href="https://zalo.me/0971120290"><img
                                         src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
                                         data-lazy-src="https://dai-ichi.vn/wp-content/themes/aia/page-templates/img/icons/Zalo@2x.png"
                                         alt="zalo">
@@ -46,20 +46,20 @@
                                 class="fa fa-bars"></i><span></span></a><a
                             class="navbar-brand order-first order-md-0 mx-0 header-main__logo" href="/"><img
                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                data-lazy-src="./assets/logo/dai-ichi-logo.png" alt=""
+                                data-lazy-src="assets/logo/dai-ichi-logo.png" alt=""
                                 width="200">
-                        <noscript><img src="./assets/logo/dai-ichi-logo.png" alt=""
+                        <noscript><img src="assets/logo/dai-ichi-logo.png" alt=""
                                        width="200"></noscript>
                     </a></div>
                 <div class="header-main__right">
                     <div class="contact-box">
                         <div class="contact-box__icon"><i class="fas fa-envelope"></i></div>
-                        <div class="contact-box__text"><strong><a href="mailto:btl.daiichivn@gmail.com">btl.daiichivn@gmail.com</a></strong><span>Gửi thông tin cho chúng tôi</span>
+                        <div class="contact-box__text"><strong><a href="mailto:baohiem.daiichilifehanoi1@gmail.com">baohiem.daiichilifehanoi1@gmail.com</a></strong><span>Gửi thông tin cho chúng tôi</span>
                         </div>
                     </div>
                     <div class="contact-box">
                         <div class="contact-box__icon"><i class="fas fa-phone-square-alt"></i></div>
-                        <div class="contact-box__text"><strong><a href="tel:0879565666">0879 565 666</a></strong><span>Liên hệ nhanh cho chúng tôi</span>
+                        <div class="contact-box__text"><strong><a href="tel:0971120290">0971 120 290</a></strong><span>Liên hệ nhanh cho chúng tôi</span>
                         </div>
                     </div>
                     <button class="btn btn-outline btn-apply text-uppercase"><a href="#">Tham gia Dai-ichi</a></button>
@@ -74,19 +74,19 @@
                     <ul id="main-menu" class="nav navbar-nav">
                         <li id="menu-item-498"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-498"><a
-                                    href="https://dai-ichi.vn/gioi-thieu/">Giới Thiệu</a></li>
+                                    href="../gioi-thieu/">Giới Thiệu</a></li>
                         <li id="menu-item-449"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-449"><a
-                                    href="https://dai-ichi.vn/san-pham/">Sản phẩm</a></li>
+                                    href="../san-pham/">Sản phẩm</a></li>
                         <li id="menu-item-401"
                             class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-401"><a
-                                    href="https://dai-ichi.vn/category/dich-vu-khach-hang/">DỊCH VỤ KHÁCH HÀNG</a></li>
+                                    href="../dich-vu-khach-hang/">DỊCH VỤ KHÁCH HÀNG</a></li>
                         <li id="menu-item-22"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-22"><a
-                                    href="https://dai-ichi.vn/tin-tuc-khuyen-mai/">Tin tức</a></li>
+                                    href="../tin-tuc-khuyen-mai/">Tin tức</a></li>
                         <li id="menu-item-23"
                             class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a
-                                    href="https://dai-ichi.vn/tuyen-dung/">Tuyển dụng</a></li>
+                                    href="../tuyen-dung/">Tuyển dụng</a></li>
                     </ul>
                 </div>
             </div>
