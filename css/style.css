@@ -621,6 +621,7 @@ footer {
 
 .footer-main {
     display: flex;
+    margin-bottom: 25px;
 }
 
 .footer-right {

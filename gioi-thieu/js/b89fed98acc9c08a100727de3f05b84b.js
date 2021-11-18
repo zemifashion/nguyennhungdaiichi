@@ -14949,10 +14949,10 @@ jQuery(document).ready(function ($) {
         }]
     })
 });
-setTimeout(function () {
-    document.getElementById('exampleModalCenter').style.display = "block";
-    document.getElementById('exampleModalCenter').classList.toggle("show")
-}, 1000);
+// setTimeout(function () {
+//     document.getElementById('exampleModalCenter').style.display = "block";
+//     document.getElementById('exampleModalCenter').classList.toggle("show")
+// }, 1000);
 $('.close').click(function () {
     $('#exampleModalCenter').css('display', 'none');
     $(this).removeClass('show')

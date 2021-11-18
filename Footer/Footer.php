@@ -3,12 +3,10 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="footer-main">
-                    <div class="footer-left-logo"><img
-                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                data-lazy-src="https://dai-ichi.vn/wp-content/uploads/2021/02/dai-ichi-logo.png" width="200"
-                                alt="">
-                        <noscript><img src="https://dai-ichi.vn/wp-content/uploads/2021/02/dai-ichi-logo.png"
-                                       width="200" alt=""></noscript>
+                    <div class="footer-left-logo">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
+                                data-lazy-src="../image/dai-ichi-logo.png" width="200" alt="">
+                        <noscript><img src="../image/dai-ichi-logo.png" width="200" alt=""></noscript>
                     </div>
                     <div class="footer-right"><p><strong>Liên hệ với Dai-ichi</strong> - Thông qua số HOTLINE</p>
                         <p style="color: white">0971120290</p></div>
@@ -23,9 +21,7 @@
                                                     href="tel:0971120290">0971120290</a></strong></a></li>
                                 <li><i class="fas fa-envelope"></i>Email:&nbsp<a href="baohiem.daiichilifehanoi1@gmail.com">baohiem.daiichilifehanoi1@gmail.com</a>
                                 </li>
-                                <li><i class="fas fa-map-marker-alt"></i>Địa chỉ: 108 Nguyễn Hoàng, Mỹ Đình, Nam Từ
-                                    Liêm, Hà Nội
-                                </li>
+                                <li><i class="fas fa-map-marker-alt"></i>Địa chỉ: Tầng 24, tòa Viwaseen Tower, 48 Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội</li>
                             </ul>
                         </div>
                         <div class="col-md-2"><h4 class="footer-bottom__title">Về Dai-ichi</h4>

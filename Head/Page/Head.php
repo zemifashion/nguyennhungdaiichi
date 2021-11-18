@@ -242,9 +242,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bảo Hiểm Dai-ichi life Việt Nam</title>
-    <link rel="icon" href="https://dai-ichi.vn/gioi-thieu/wp-content/uploads/2020/10/logo.png" type="image/x-icon"/>
-    <link rel="stylesheet" href="css/0261505f2f612bf6f7af78e82237e278.css" data-minify="1"/>
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="icon" href="../../image/dai-ichi-logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../../css/page/0261505f2f612bf6f7af78e82237e278.css" data-minify="1"/>
+    <link rel="stylesheet" href="../../css/all.min.css">
     <style type="text/css">
         ul#menu-mobile {
             width: 0;
