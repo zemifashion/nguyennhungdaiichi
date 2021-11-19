@@ -4,7 +4,7 @@
  *
  * This is the template that displays all of the <head> section, opens the <body> tag and adds the site's header.
  *
- * @package BHDaiichi
+ * @package HelloElementor
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<?php $viewport_content = apply_filters( 'bh_daiichi_viewport_content', 'width=device-width, initial-scale=1' ); ?>
+	<?php $viewport_content = apply_filters( 'hello_elementor_viewport_content', 'width=device-width, initial-scale=1' ); ?>
 	<meta name="viewport" content="<?php echo esc_attr( $viewport_content ); ?>">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<?php wp_head(); ?>
@@ -23,10 +23,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 <body <?php body_class(); ?>>
 
 <?php
-bh_daiichi_body_open();
+hello_elementor_body_open();
 
 if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {
-	if ( did_action( 'elementor/loaded' ) && bh_header_footer_experiment_active() ) {
+	if ( did_action( 'elementor/loaded' ) && hello_header_footer_experiment_active() ) {
 		get_template_part( 'template-parts/dynamic-header' );
 	} else {
 		get_template_part( 'template-parts/header' );

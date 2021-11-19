@@ -5,7 +5,7 @@
  * This is the template that displays the area of the page that contains both the current comments
  * and the comment form.
  *
- * @package BHDaiichi
+ * @package HelloElementor
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -24,7 +24,7 @@ if ( comments_open() && get_option( 'thread_comments' ) ) {
 			<?php
 			$comments_number = get_comments_number();
 			if ( '1' === $comments_number ) {
-				printf( esc_html_x( 'One Response', 'comments title', 'bh-daiichi' ) );
+				printf( esc_html_x( 'One Response', 'comments title', 'hello-elementor' ) );
 			} else {
 				printf(
 					esc_html( /* translators: 1: number of comments */
@@ -33,7 +33,7 @@ if ( comments_open() && get_option( 'thread_comments' ) ) {
 							'%1$s Responses',
 							$comments_number,
 							'comments title',
-							'bh-daiichi'
+							'hello-elementor'
 						)
 					),
 					esc_html( number_format_i18n( $comments_number ) )
@@ -64,7 +64,7 @@ if ( comments_open() && get_option( 'thread_comments' ) ) {
 // If comments are closed and there are comments, let's leave a little note, shall we?
 if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-	<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'bh-daiichi' ); ?></p>
+	<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'hello-elementor' ); ?></p>
 <?php endif; ?>
 
 <?php

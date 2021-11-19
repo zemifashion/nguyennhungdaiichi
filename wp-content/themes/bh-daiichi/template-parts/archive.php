@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive pages.
  *
- * @package BHDaiichi
+ * @package HelloElementor
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <main class="site-main" role="main">
 
-	<?php if ( apply_filters( 'bh_daiichi_page_title', true ) ) : ?>
+	<?php if ( apply_filters( 'hello_elementor_page_title', true ) ) : ?>
 		<header class="page-header">
 			<?php
 			the_archive_title( '<h1 class="entry-title">', '</h1>' );
@@ -43,9 +43,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 		?>
 		<nav class="pagination" role="navigation">
 			<?php /* Translators: HTML arrow */ ?>
-			<div class="nav-previous"><?php next_posts_link( sprintf( __( '%s older', 'bh-daiichi' ), '<span class="meta-nav">&larr;</span>' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( sprintf( __( '%s older', 'hello-elementor' ), '<span class="meta-nav">&larr;</span>' ) ); ?></div>
 			<?php /* Translators: HTML arrow */ ?>
-			<div class="nav-next"><?php previous_posts_link( sprintf( __( 'newer %s', 'bh-daiichi' ), '<span class="meta-nav">&rarr;</span>' ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( sprintf( __( 'newer %s', 'hello-elementor' ), '<span class="meta-nav">&rarr;</span>' ) ); ?></div>
 		</nav>
 	<?php endif; ?>
 </main>

@@ -1,6 +1,6 @@
 <?php
 
-namespace BHDaiichi\Includes\Settings;
+namespace HelloElementor\Includes\Settings;
 
 use Elementor\Plugin;
 use Elementor\Controls_Manager;
@@ -20,7 +20,7 @@ class Settings_Header extends Tab_Base {
 	}
 
 	public function get_title() {
-		return __( 'Header', 'bh-daiichi' );
+		return __( 'Header', 'hello-elementor' );
 	}
 
 	public function get_icon() {
@@ -37,55 +37,55 @@ class Settings_Header extends Tab_Base {
 
 	protected function register_tab_controls() {
 		$this->start_controls_section(
-			'bh_header_section',
+			'hello_header_section',
 			[
 				'tab' => 'hello-settings-header',
-				'label' => __( 'Header', 'bh-daiichi' ),
+				'label' => __( 'Header', 'hello-elementor' ),
 			]
 		);
 
 		$this->add_control(
-			'bh_header_logo_display',
+			'hello_header_logo_display',
 			[
 				'type' => Controls_Manager::SWITCHER,
-				'label' => __( 'Site Logo', 'bh-daiichi' ),
+				'label' => __( 'Site Logo', 'hello-elementor' ),
 				'default' => 'yes',
-				'label_on' => __( 'Show', 'bh-daiichi' ),
-				'label_off' => __( 'Hide', 'bh-daiichi' ),
+				'label_on' => __( 'Show', 'hello-elementor' ),
+				'label_off' => __( 'Hide', 'hello-elementor' ),
 			]
 		);
 
 		$this->add_control(
-			'bh_header_tagline_display',
+			'hello_header_tagline_display',
 			[
 				'type' => Controls_Manager::SWITCHER,
-				'label' => __( 'Tagline', 'bh-daiichi' ),
+				'label' => __( 'Tagline', 'hello-elementor' ),
 				'default' => 'yes',
-				'label_on' => __( 'Show', 'bh-daiichi' ),
-				'label_off' => __( 'Hide', 'bh-daiichi' ),
+				'label_on' => __( 'Show', 'hello-elementor' ),
+				'label_off' => __( 'Hide', 'hello-elementor' ),
 			]
 		);
 
 		$this->add_control(
-			'bh_header_menu_display',
+			'hello_header_menu_display',
 			[
 				'type' => Controls_Manager::SWITCHER,
-				'label' => __( 'Menu', 'bh-daiichi' ),
+				'label' => __( 'Menu', 'hello-elementor' ),
 				'default' => 'yes',
-				'label_on' => __( 'Show', 'bh-daiichi' ),
-				'label_off' => __( 'Hide', 'bh-daiichi' ),
+				'label_on' => __( 'Show', 'hello-elementor' ),
+				'label_off' => __( 'Hide', 'hello-elementor' ),
 			]
 		);
 
 		$this->add_control(
-			'bh_header_layout',
+			'hello_header_layout',
 			[
 				'type' => Controls_Manager::SELECT,
-				'label' => __( 'Layout', 'bh-daiichi' ),
+				'label' => __( 'Layout', 'hello-elementor' ),
 				'options' => [
-					'default' => __( 'Default', 'bh-daiichi' ),
-					'inverted' => __( 'Inverted', 'bh-daiichi' ),
-					'stacked' => __( 'Centered', 'bh-daiichi' ),
+					'default' => __( 'Default', 'hello-elementor' ),
+					'inverted' => __( 'Inverted', 'hello-elementor' ),
+					'stacked' => __( 'Centered', 'hello-elementor' ),
 				],
 				'selector' => '.site-header',
 				'default' => 'default',
@@ -93,13 +93,13 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_control(
-			'bh_header_width',
+			'hello_header_width',
 			[
 				'type' => Controls_Manager::SELECT,
-				'label' => __( 'Width', 'bh-daiichi' ),
+				'label' => __( 'Width', 'hello-elementor' ),
 				'options' => [
-					'boxed' => __( 'Boxed', 'bh-daiichi' ),
-					'full-width' => __( 'Full Width', 'bh-daiichi' ),
+					'boxed' => __( 'Boxed', 'hello-elementor' ),
+					'full-width' => __( 'Full Width', 'hello-elementor' ),
 				],
 				'selector' => '.site-header',
 				'default' => 'boxed',
@@ -107,10 +107,10 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_responsive_control(
-			'bh_header_custom_width',
+			'hello_header_custom_width',
 			[
 				'type' => Controls_Manager::SLIDER,
-				'label' => __( 'Content Width', 'bh-daiichi' ),
+				'label' => __( 'Content Width', 'hello-elementor' ),
 				'size_units' => [
 					'%',
 					'px',
@@ -126,7 +126,7 @@ class Settings_Header extends Tab_Base {
 					],
 				],
 				'condition' => [
-					'bh_header_width' => 'boxed',
+					'hello_header_width' => 'boxed',
 				],
 				'selectors' => [
 					'.site-header .header-inner' => 'width: {{SIZE}}{{UNIT}}; max-width: 100%;',
@@ -135,10 +135,10 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_responsive_control(
-			'bh_header_gap',
+			'hello_header_gap',
 			[
 				'type' => Controls_Manager::SLIDER,
-				'label' => __( 'Gap', 'bh-daiichi' ),
+				'label' => __( 'Gap', 'hello-elementor' ),
 				'size_units' => [
 					'%',
 					'px',
@@ -163,7 +163,7 @@ class Settings_Header extends Tab_Base {
 					'relation' => 'and',
 					'terms' => [
 						[
-							'name' => 'bh_header_layout',
+							'name' => 'hello_header_layout',
 							'operator' => '!=',
 							'value' => 'stacked',
 						],
@@ -175,8 +175,8 @@ class Settings_Header extends Tab_Base {
 		$this->add_group_control(
 			Group_Control_Background::get_type(),
 			[
-				'name' => 'bh_header_background',
-				'label' => __( 'Background', 'bh-daiichi' ),
+				'name' => 'hello_header_background',
+				'label' => __( 'Background', 'hello-elementor' ),
 				'types' => [ 'classic', 'gradient' ],
 				'selector' => '.site-header',
 			]
@@ -185,15 +185,15 @@ class Settings_Header extends Tab_Base {
 		$this->end_controls_section();
 
 		$this->start_controls_section(
-			'bh_header_logo_section',
+			'hello_header_logo_section',
 			[
 				'tab' => 'hello-settings-header',
-				'label' => __( 'Site Logo', 'bh-daiichi' ),
+				'label' => __( 'Site Logo', 'hello-elementor' ),
 				'conditions' => [
 					'relation' => 'and',
 					'terms' => [
 						[
-							'name' => 'bh_header_logo_display',
+							'name' => 'hello_header_logo_display',
 							'operator' => '=',
 							'value' => 'yes',
 						],
@@ -203,25 +203,25 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_control(
-			'bh_header_logo_type',
+			'hello_header_logo_type',
 			[
-				'label' => __( 'Type', 'bh-daiichi' ),
+				'label' => __( 'Type', 'hello-elementor' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => ( has_custom_logo() ? 'logo' : 'title' ),
 				'options' => [
-					'logo' => __( 'Logo', 'bh-daiichi' ),
-					'title' => __( 'Title', 'bh-daiichi' ),
+					'logo' => __( 'Logo', 'hello-elementor' ),
+					'title' => __( 'Title', 'hello-elementor' ),
 				],
 				'frontend_available' => true,
 			]
 		);
 
 		$this->add_responsive_control(
-			'bh_header_logo_width',
+			'hello_header_logo_width',
 			[
 				'type' => Controls_Manager::SLIDER,
-				'label' => __( 'Logo Width', 'bh-daiichi' ),
-				'description' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s logo', 'bh-daiichi' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
+				'label' => __( 'Logo Width', 'hello-elementor' ),
+				'description' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s logo', 'hello-elementor' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
 				'size_units' => [
 					'%',
 					'px',
@@ -238,8 +238,8 @@ class Settings_Header extends Tab_Base {
 					],
 				],
 				'condition' => [
-					'bh_header_logo_display' => 'yes',
-					'bh_header_logo_type' => 'logo',
+					'hello_header_logo_display' => 'yes',
+					'hello_header_logo_type' => 'logo',
 				],
 				'selectors' => [
 					'.site-header .site-branding .site-logo img' => 'width: {{SIZE}}{{UNIT}}; max-width: {{SIZE}}{{UNIT}}',
@@ -248,13 +248,13 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_control(
-			'bh_header_title_color',
+			'hello_header_title_color',
 			[
-				'label' => __( 'Text Color', 'bh-daiichi' ),
+				'label' => __( 'Text Color', 'hello-elementor' ),
 				'type' => Controls_Manager::COLOR,
 				'condition' => [
-					'bh_header_logo_display' => 'yes',
-					'bh_header_logo_type' => 'title',
+					'hello_header_logo_display' => 'yes',
+					'hello_header_logo_type' => 'title',
 				],
 				'selectors' => [
 					'.site-header h1.site-title a' => 'color: {{VALUE}};',
@@ -265,26 +265,26 @@ class Settings_Header extends Tab_Base {
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
-				'name' => 'bh_header_title_typography',
-				'label' => __( 'Typography', 'bh-daiichi' ),
-				'description' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s title and tagline', 'bh-daiichi' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
+				'name' => 'hello_header_title_typography',
+				'label' => __( 'Typography', 'hello-elementor' ),
+				'description' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s title and tagline', 'hello-elementor' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
 				'condition' => [
-					'bh_header_logo_display' => 'yes',
-					'bh_header_logo_type' => 'title',
+					'hello_header_logo_display' => 'yes',
+					'hello_header_logo_type' => 'title',
 				],
 				'selector' => '.site-header h1.site-title',
 			]
 		);
 
 		$this->add_control(
-			'bh_header_title_link',
+			'hello_header_title_link',
 			[
 				'type' => Controls_Manager::RAW_HTML,
-				'raw' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s title and tagline', 'bh-daiichi' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
+				'raw' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s title and tagline', 'hello-elementor' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
 				'content_classes' => 'elementor-control-field-description',
 				'condition' => [
-					'bh_header_logo_display' => 'yes',
-					'bh_header_logo_type' => 'title',
+					'hello_header_logo_display' => 'yes',
+					'hello_header_logo_type' => 'title',
 				],
 			]
 		);
@@ -292,15 +292,15 @@ class Settings_Header extends Tab_Base {
 		$this->end_controls_section();
 
 		$this->start_controls_section(
-			'bh_header_tagline',
+			'hello_header_tagline',
 			[
 				'tab' => 'hello-settings-header',
-				'label' => __( 'Tagline', 'bh-daiichi' ),
+				'label' => __( 'Tagline', 'hello-elementor' ),
 				'conditions' => [
 					'relation' => 'and',
 					'terms' => [
 						[
-							'name' => 'bh_header_tagline_display',
+							'name' => 'hello_header_tagline_display',
 							'operator' => '=',
 							'value' => 'yes',
 						],
@@ -310,12 +310,12 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_control(
-			'bh_header_tagline_color',
+			'hello_header_tagline_color',
 			[
-				'label' => __( 'Text Color', 'bh-daiichi' ),
+				'label' => __( 'Text Color', 'hello-elementor' ),
 				'type' => Controls_Manager::COLOR,
 				'condition' => [
-					'bh_header_tagline_display' => 'yes',
+					'hello_header_tagline_display' => 'yes',
 				],
 				'selectors' => [
 					'.site-header .site-description' => 'color: {{VALUE}};',
@@ -326,20 +326,20 @@ class Settings_Header extends Tab_Base {
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
-				'name' => 'bh_header_tagline_typography',
-				'label' => __( 'Typography', 'bh-daiichi' ),
+				'name' => 'hello_header_tagline_typography',
+				'label' => __( 'Typography', 'hello-elementor' ),
 				'condition' => [
-					'bh_header_tagline_display' => 'yes',
+					'hello_header_tagline_display' => 'yes',
 				],
 				'selector' => '.site-header .site-description',
 			]
 		);
 
 		$this->add_control(
-			'bh_header_tagline_link',
+			'hello_header_tagline_link',
 			[
 				'type' => Controls_Manager::RAW_HTML,
-				'raw' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s title and tagline', 'bh-daiichi' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
+				'raw' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s title and tagline', 'hello-elementor' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
 				'content_classes' => 'elementor-control-field-description',
 			]
 		);
@@ -347,15 +347,15 @@ class Settings_Header extends Tab_Base {
 		$this->end_controls_section();
 
 		$this->start_controls_section(
-			'bh_header_menu_tab',
+			'hello_header_menu_tab',
 			[
 				'tab' => 'hello-settings-header',
-				'label' => __( 'Menu', 'bh-daiichi' ),
+				'label' => __( 'Menu', 'hello-elementor' ),
 				'conditions' => [
 					'relation' => 'and',
 					'terms' => [
 						[
-							'name' => 'bh_header_menu_display',
+							'name' => 'hello_header_menu_display',
 							'operator' => '=',
 							'value' => 'yes',
 						],
@@ -366,51 +366,51 @@ class Settings_Header extends Tab_Base {
 
 		$available_menus = wp_get_nav_menus();
 
-		$menus = [ '0' => __( '— Select a Menu —', 'bh-daiichi' ) ];
+		$menus = [ '0' => __( '— Select a Menu —', 'hello-elementor' ) ];
 		foreach ( $available_menus as $available_menu ) {
 			$menus[ $available_menu->term_id ] = $available_menu->name;
 		}
 
 		if ( 1 === count( $menus ) ) {
 			$this->add_control(
-				'bh_header_menu_notice',
+				'hello_header_menu_notice',
 				[
 					'type' => Controls_Manager::RAW_HTML,
-					'raw' => '<strong>' . __( 'There are no menus in your site.', 'bh-daiichi' ) . '</strong><br>' . sprintf( __( 'Go to <a href="%s" target="_blank">Menus screen</a> to create one.', 'bh-daiichi' ), admin_url( 'nav-menus.php?action=edit&menu=0' ) ),
+					'raw' => '<strong>' . __( 'There are no menus in your site.', 'hello-elementor' ) . '</strong><br>' . sprintf( __( 'Go to <a href="%s" target="_blank">Menus screen</a> to create one.', 'hello-elementor' ), admin_url( 'nav-menus.php?action=edit&menu=0' ) ),
 					'separator' => 'after',
 					'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
 				]
 			);
 		} else {
 			$this->add_control(
-				'bh_header_menu',
+				'hello_header_menu',
 				[
-					'label' => __( 'Menu', 'bh-daiichi' ),
+					'label' => __( 'Menu', 'hello-elementor' ),
 					'type' => Controls_Manager::SELECT,
 					'options' => $menus,
 					'default' => array_keys( $menus )[0],
-					'description' => sprintf( __( 'Go to the <a href="%s" target="_blank">Menus screen</a> to manage your menus.', 'bh-daiichi' ), admin_url( 'nav-menus.php' ) ),
+					'description' => sprintf( __( 'Go to the <a href="%s" target="_blank">Menus screen</a> to manage your menus.', 'hello-elementor' ), admin_url( 'nav-menus.php' ) ),
 				]
 			);
 
 			$this->add_control(
-				'bh_header_menu_warning',
+				'hello_header_menu_warning',
 				[
 					'type' => Controls_Manager::RAW_HTML,
-					'raw' => __( 'Changes will be reflected in the preview only after the page reloads.', 'bh-daiichi' ),
+					'raw' => __( 'Changes will be reflected in the preview only after the page reloads.', 'hello-elementor' ),
 					'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
 				]
 			);
 
 			$this->add_control(
-				'bh_header_menu_layout',
+				'hello_header_menu_layout',
 				[
-					'label' => __( 'Menu Layout', 'bh-daiichi' ),
+					'label' => __( 'Menu Layout', 'hello-elementor' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'horizontal',
 					'options' => [
-						'horizontal' => __( 'Horizontal', 'bh-daiichi' ),
-						'dropdown' => __( 'Dropdown', 'bh-daiichi' ),
+						'horizontal' => __( 'Horizontal', 'hello-elementor' ),
+						'dropdown' => __( 'Dropdown', 'hello-elementor' ),
 					],
 					'frontend_available' => true,
 				]
@@ -419,32 +419,32 @@ class Settings_Header extends Tab_Base {
 			$breakpoints = Responsive::get_breakpoints();
 
 			$this->add_control(
-				'bh_header_menu_dropdown',
+				'hello_header_menu_dropdown',
 				[
-					'label' => __( 'Breakpoint', 'bh-daiichi' ),
+					'label' => __( 'Breakpoint', 'hello-elementor' ),
 					'type' => Controls_Manager::SELECT,
 					'default' => 'tablet',
 					'options' => [
 						/* translators: %d: Breakpoint number. */
-						'mobile' => sprintf( __( 'Mobile (< %dpx)', 'bh-daiichi' ), $breakpoints['md'] ),
+						'mobile' => sprintf( __( 'Mobile (< %dpx)', 'hello-elementor' ), $breakpoints['md'] ),
 						/* translators: %d: Breakpoint number. */
-						'tablet' => sprintf( __( 'Tablet (< %dpx)', 'bh-daiichi' ), $breakpoints['lg'] ),
-						'none' => __( 'None', 'bh-daiichi' ),
+						'tablet' => sprintf( __( 'Tablet (< %dpx)', 'hello-elementor' ), $breakpoints['lg'] ),
+						'none' => __( 'None', 'hello-elementor' ),
 					],
 					'selector' => '.site-header',
 					'condition' => [
-						'bh_header_menu_layout!' => 'dropdown',
+						'hello_header_menu_layout!' => 'dropdown',
 					],
 				]
 			);
 
 			$this->add_control(
-				'bh_header_menu_color',
+				'hello_header_menu_color',
 				[
-					'label' => __( 'Color', 'bh-daiichi' ),
+					'label' => __( 'Color', 'hello-elementor' ),
 					'type' => Controls_Manager::COLOR,
 					'condition' => [
-						'bh_header_menu_display' => 'yes',
+						'hello_header_menu_display' => 'yes',
 					],
 					'selectors' => [
 						'.site-header .site-navigation ul.menu li a' => 'color: {{VALUE}};',
@@ -453,12 +453,12 @@ class Settings_Header extends Tab_Base {
 			);
 
 			$this->add_control(
-				'bh_header_menu_toggle_color',
+				'hello_header_menu_toggle_color',
 				[
-					'label' => __( 'Toggle Color', 'bh-daiichi' ),
+					'label' => __( 'Toggle Color', 'hello-elementor' ),
 					'type' => Controls_Manager::COLOR,
 					'condition' => [
-						'bh_header_menu_display' => 'yes',
+						'hello_header_menu_display' => 'yes',
 					],
 					'selectors' => [
 						'.site-header .site-navigation-toggle i' => 'color: {{VALUE}};',
@@ -469,10 +469,10 @@ class Settings_Header extends Tab_Base {
 			$this->add_group_control(
 				Group_Control_Typography::get_type(),
 				[
-					'name' => 'bh_header_menu_typography',
-					'label' => __( 'Typography', 'bh-daiichi' ),
+					'name' => 'hello_header_menu_typography',
+					'label' => __( 'Typography', 'hello-elementor' ),
 					'condition' => [
-						'bh_header_menu_display' => 'yes',
+						'hello_header_menu_display' => 'yes',
 					],
 					'selector' => '.site-header .site-navigation .menu li',
 				]
@@ -484,8 +484,8 @@ class Settings_Header extends Tab_Base {
 
 	public function on_save( $data ) {
 		// Save chosen header menu to the WP settings.
-		if ( isset( $data['settings']['bh_header_menu'] ) ) {
-			$menu_id = $data['settings']['bh_header_menu'];
+		if ( isset( $data['settings']['hello_header_menu'] ) ) {
+			$menu_id = $data['settings']['hello_header_menu'];
 			$locations = get_theme_mod( 'nav_menu_locations' );
 			$locations['menu-1'] = (int) $menu_id;
 			set_theme_mod( 'nav_menu_locations', $locations );
@@ -495,23 +495,23 @@ class Settings_Header extends Tab_Base {
 	public function get_additional_tab_content() {
 		if ( ! defined( 'ELEMENTOR_PRO_VERSION' ) ) {
 			return sprintf( '
-				<div class="bh-daiichi elementor-nerd-box">
+				<div class="hello-elementor elementor-nerd-box">
 					<img src="%4$s" class="elementor-nerd-box-icon">
 					<div class="elementor-nerd-box-message">
 						<p class="elementor-panel-heading-title elementor-nerd-box-title">%1$s</p>
 						<p>%2$s</p>
 					</div>
-					<a class="elementor-button elementor-button-default elementor-nerd-box-link" target="_blank" href="https://elementor.com/pro/?utm_source=panel-widgets&amp;utm_campaign=gopro&amp;utm_medium=wp-dash&amp;utm_term=bhdaiichi">%3$s</a>
+					<a class="elementor-button elementor-button-default elementor-nerd-box-link" target="_blank" href="https://elementor.com/pro/?utm_source=panel-widgets&amp;utm_campaign=gopro&amp;utm_medium=wp-dash&amp;utm_term=helloelementor">%3$s</a>
 				</div>
 				',
-				__( 'Create a custom header with multiple options', 'bh-daiichi' ),
-				__( 'Upgrade to Elementor Pro and enjoy free design and many more features', 'bh-daiichi' ),
-				__( 'Go Pro', 'bh-daiichi' ),
+				__( 'Create a custom header with multiple options', 'hello-elementor' ),
+				__( 'Upgrade to Elementor Pro and enjoy free design and many more features', 'hello-elementor' ),
+				__( 'Go Pro', 'hello-elementor' ),
 				get_template_directory_uri() . '/assets/images/go-pro.svg'
 			);
 		} else {
 			return sprintf( '
-				<div class="bh-daiichi elementor-nerd-box">
+				<div class="hello-elementor elementor-nerd-box">
 					<img src="%4$s" class="elementor-nerd-box-icon">
 					<div class="elementor-nerd-box-message">
 						<p class="elementor-panel-heading-title elementor-nerd-box-title">%1$s</p>
@@ -520,9 +520,9 @@ class Settings_Header extends Tab_Base {
 					<a class="elementor-button elementor-button-success elementor-nerd-box-link" target="_blank" href="%5$s">%3$s</a>
 				</div>
 				',
-				__( 'Create a custom header with the new Theme Builder', 'bh-daiichi' ),
-				__( 'With the new Theme Builder you can jump directly into each part of your site', 'bh-daiichi' ),
-				__( 'Create Header', 'bh-daiichi' ),
+				__( 'Create a custom header with the new Theme Builder', 'hello-elementor' ),
+				__( 'With the new Theme Builder you can jump directly into each part of your site', 'hello-elementor' ),
+				__( 'Create Header', 'hello-elementor' ),
 				get_template_directory_uri() . '/assets/images/go-pro.svg',
 				get_admin_url( null, 'admin.php?page=elementor-app#/site-editor/templates/header' )
 			);
