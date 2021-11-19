@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-define( 'HELLO_ELEMENTOR_VERSION', '2.4.1' );
+define( 'BH_DAIICHI_VERSION', '2.4.1' );
 
 if ( ! isset( $content_width ) ) {
 	$content_width = 800; // Pixels.
@@ -98,8 +98,8 @@ function hello_maybe_update_theme_version_in_db() {
 	$hello_theme_db_version = get_option( $theme_version_option_name );
 
 	// If the 'hello_theme_version' option does not exist in the DB, or the version needs to be updated, do the update.
-	if ( ! $hello_theme_db_version || version_compare( $hello_theme_db_version, HELLO_ELEMENTOR_VERSION, '<' ) ) {
-		update_option( $theme_version_option_name, HELLO_ELEMENTOR_VERSION );
+	if ( ! $hello_theme_db_version || version_compare( $hello_theme_db_version, BH_DAIICHI_VERSION, '<' ) ) {
+		update_option( $theme_version_option_name, BH_DAIICHI_VERSION );
 	}
 }
 
@@ -118,7 +118,7 @@ if ( ! function_exists( 'hello_elementor_scripts_styles' ) ) {
 				'hello-elementor',
 				get_template_directory_uri() . '/style' . $min_suffix . '.css',
 				[],
-				HELLO_ELEMENTOR_VERSION
+                BH_DAIICHI_VERSION
 			);
 		}
 
@@ -127,7 +127,7 @@ if ( ! function_exists( 'hello_elementor_scripts_styles' ) ) {
 				'hello-elementor-theme-style',
 				get_template_directory_uri() . '/theme' . $min_suffix . '.css',
 				[],
-				HELLO_ELEMENTOR_VERSION
+                BH_DAIICHI_VERSION
 			);
 		}
 	}

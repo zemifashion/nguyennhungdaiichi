@@ -56,6 +56,6 @@ function hello_customizer_print_styles() {
 		'hello-elementor-customizer',
 		get_template_directory_uri() . '/customizer' . $min_suffix . '.css',
 		[],
-		HELLO_ELEMENTOR_VERSION
+		BH_DAIICHI_VERSION
 	);
 }
