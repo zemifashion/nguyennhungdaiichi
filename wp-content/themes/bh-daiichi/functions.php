@@ -26,18 +26,18 @@ if ( ! function_exists( 'bh_daiichi_setup' ) ) {
 			hello_maybe_update_theme_version_in_db();
 		}
 
-		$hook_result = apply_filters_deprecated( 'elementor_hello_theme_load_textdomain', [ true ], '2.0', 'bh_daiichi_load_textdomain' );
+		$hook_result = apply_filters_deprecated( 'elementor_bh_theme_load_textdomain', [ true ], '2.0', 'bh_daiichi_load_textdomain' );
 		if ( apply_filters( 'bh_daiichi_load_textdomain', $hook_result ) ) {
 			load_theme_textdomain( 'bh-daiichi', get_template_directory() . '/languages' );
 		}
 
-		$hook_result = apply_filters_deprecated( 'elementor_hello_theme_register_menus', [ true ], '2.0', 'bh_daiichi_register_menus' );
+		$hook_result = apply_filters_deprecated( 'elementor_bh_theme_register_menus', [ true ], '2.0', 'bh_daiichi_register_menus' );
 		if ( apply_filters( 'bh_daiichi_register_menus', $hook_result ) ) {
 			register_nav_menus( [ 'menu-1' => __( 'Header', 'bh-daiichi' ) ] );
 			register_nav_menus( [ 'menu-2' => __( 'Footer', 'bh-daiichi' ) ] );
 		}
 
-		$hook_result = apply_filters_deprecated( 'elementor_hello_theme_add_theme_support', [ true ], '2.0', 'bh_daiichi_add_theme_support' );
+		$hook_result = apply_filters_deprecated( 'elementor_bh_theme_add_theme_support', [ true ], '2.0', 'bh_daiichi_add_theme_support' );
 		if ( apply_filters( 'bh_daiichi_add_theme_support', $hook_result ) ) {
 			add_theme_support( 'post-thumbnails' );
 			add_theme_support( 'automatic-feed-links' );
@@ -75,7 +75,7 @@ if ( ! function_exists( 'bh_daiichi_setup' ) ) {
 			/*
 			 * WooCommerce.
 			 */
-			$hook_result = apply_filters_deprecated( 'elementor_hello_theme_add_woocommerce_support', [ true ], '2.0', 'bh_daiichi_add_woocommerce_support' );
+			$hook_result = apply_filters_deprecated( 'elementor_bh_theme_add_woocommerce_support', [ true ], '2.0', 'bh_daiichi_add_woocommerce_support' );
 			if ( apply_filters( 'bh_daiichi_add_woocommerce_support', $hook_result ) ) {
 				// WooCommerce in general.
 				add_theme_support( 'woocommerce' );
@@ -93,12 +93,12 @@ if ( ! function_exists( 'bh_daiichi_setup' ) ) {
 add_action( 'after_setup_theme', 'bh_daiichi_setup' );
 
 function hello_maybe_update_theme_version_in_db() {
-	$theme_version_option_name = 'hello_theme_version';
+	$theme_version_option_name = 'bh_theme_version';
 	// The theme version saved in the database.
-	$hello_theme_db_version = get_option( $theme_version_option_name );
+	$bh_theme_db_version = get_option( $theme_version_option_name );
 
-	// If the 'hello_theme_version' option does not exist in the DB, or the version needs to be updated, do the update.
-	if ( ! $hello_theme_db_version || version_compare( $hello_theme_db_version, BH_DAIICHI_VERSION, '<' ) ) {
+	// If the 'bh_theme_version' option does not exist in the DB, or the version needs to be updated, do the update.
+	if ( ! $bh_theme_db_version || version_compare( $bh_theme_db_version, BH_DAIICHI_VERSION, '<' ) ) {
 		update_option( $theme_version_option_name, BH_DAIICHI_VERSION );
 	}
 }
@@ -110,7 +110,7 @@ if ( ! function_exists( 'bh_daiichi_scripts_styles' ) ) {
 	 * @return void
 	 */
 	function bh_daiichi_scripts_styles() {
-		$enqueue_basic_style = apply_filters_deprecated( 'elementor_hello_theme_enqueue_style', [ true ], '2.0', 'bh_daiichi_enqueue_style' );
+		$enqueue_basic_style = apply_filters_deprecated( 'elementor_bh_theme_enqueue_style', [ true ], '2.0', 'bh_daiichi_enqueue_style' );
 		$min_suffix          = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
 		if ( apply_filters( 'bh_daiichi_enqueue_style', $enqueue_basic_style ) ) {
@@ -143,7 +143,7 @@ if ( ! function_exists( 'bh_daiichi_register_elementor_locations' ) ) {
 	 * @return void
 	 */
 	function bh_daiichi_register_elementor_locations( $elementor_theme_manager ) {
-		$hook_result = apply_filters_deprecated( 'elementor_hello_theme_register_elementor_locations', [ true ], '2.0', 'bh_daiichi_register_elementor_locations' );
+		$hook_result = apply_filters_deprecated( 'elementor_bh_theme_register_elementor_locations', [ true ], '2.0', 'bh_daiichi_register_elementor_locations' );
 		if ( apply_filters( 'bh_daiichi_register_elementor_locations', $hook_result ) ) {
 			$elementor_theme_manager->register_all_core_location();
 		}

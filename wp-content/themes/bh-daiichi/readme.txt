@@ -193,12 +193,12 @@ Source: https://stocksnap.io/photo/4B83RD7BV9
 = 1.1.0 - 2018-12-26 =
 * New: Added SCSS & do thorough style reset
 * New: Added readme file
-* New: Added `elementor_hello_theme_load_textdomain` filter for load theme's textdomain
-* New: Added `elementor_hello_theme_register_menus` filter for register the theme's default menu location
-* New: Added `elementor_hello_theme_add_theme_support` filter for register the various supported features
-* New: Added `elementor_hello_theme_add_woocommerce_support` filter for register woocommerce features, including product-gallery zoom, swipe & lightbox features
-* New: Added `elementor_hello_theme_enqueue_style` filter for enqueue style
-* New: Added `elementor_hello_theme_register_elementor_locations` filter for register elementor settings
+* New: Added `elementor_bh_theme_load_textdomain` filter for load theme's textdomain
+* New: Added `elementor_bh_theme_register_menus` filter for register the theme's default menu location
+* New: Added `elementor_bh_theme_add_theme_support` filter for register the various supported features
+* New: Added `elementor_bh_theme_add_woocommerce_support` filter for register woocommerce features, including product-gallery zoom, swipe & lightbox features
+* New: Added `elementor_bh_theme_enqueue_style` filter for enqueue style
+* New: Added `elementor_bh_theme_register_elementor_locations` filter for register elementor settings
 * New: Added child-theme preparations
 * New: Added template part search
 * New: Added translation support

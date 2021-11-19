@@ -14,7 +14,7 @@ function hello_customizer_register( $wp_customize ) {
 	require get_template_directory() . '/includes/customizer/elementor-upsell.php';
 
 	$wp_customize->add_section(
-		'hello_theme_options',
+		'bh_theme_options',
 		[
 			'title' => __( 'Header &amp; Footer', 'bh-daiichi' ),
 			'capability' => 'edit_theme_options',
@@ -34,7 +34,7 @@ function hello_customizer_register( $wp_customize ) {
 			$wp_customize,
 			'bh-daiichi-header-footer',
 			[
-				'section' => 'hello_theme_options',
+				'section' => 'bh_theme_options',
 				'priority' => 20,
 			]
 		)
