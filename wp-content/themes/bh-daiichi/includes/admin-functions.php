@@ -137,7 +137,7 @@ function hello_elementor_fail_load_admin_notice() {
 		</div>
 		<div class="hello-elementor-notice-inner">
 			<div class="hello-elementor-notice-content">
-				<h3><?php esc_html_e( 'Thanks for installing Hello Theme!', 'hello-elementor' ); ?></h3>
+				<h3><?php esc_html_e( 'Thanks for installing Bao Hiem Daiichi Theme!', 'hello-elementor' ); ?></h3>
 				<p><?php echo esc_html( $message ); ?></p>
 				<a href="https://go.elementor.com/hello-theme-learn/" target="_blank"><?php esc_html_e( 'Learn more about Elementor', 'hello-elementor' ); ?></a>
 				<div class="hello-elementor-install-now">

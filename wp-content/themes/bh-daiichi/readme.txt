@@ -1,4 +1,4 @@
-=== Hello Elementor ===
+=== Baohiem-Daiichi ===
 
 Contributors: elemntor, KingYes, ariel.k, jzaltzberg, mati1000, bainternet
 Requires at least: 4.7
@@ -12,7 +12,7 @@ Tags: custom-menu, custom-logo, featured-images, rtl-language-support, threaded-
 
 A lightweight, plain-vanilla theme for Elementor page builder.
 
-***Hello Elementor*** is distributed under the terms of the GNU GPL v3 or later.
+***Baohiem-Daiichi*** is distributed under the terms of the GNU GPL v3 or later.
 
 == Description ==
 
@@ -25,7 +25,7 @@ Screenshot's images & icons are licensed under: Creative Commons (CC0), https://
 == Installation ==
 
 1. In your site's admin panel, go to Appearance > Themes and click `Add New`.
-2. Type "Hello Elementor" in the search field.
+2. Type "Baohiem-Daiichi" in the search field.
 3. Click `Install` and then `Activate` to start using the theme.
 4. Navigate to Appearance > Customize in your admin panel and customize to your needs.
 5. A notice box may appear, recommending you to install Elementor Page Builder Plugin. You can either use it or any other editor.
@@ -70,7 +70,7 @@ add_filter( 'choose-from-the-list-below', '__return_false' );
 
 **Does this theme support any plugins?**
 
-Hello Elementor includes support for WooCommerce.
+Baohiem-Daiichi includes support for WooCommerce.
 
 **Can Font Styles be added thru the theme's css file?**
 
@@ -81,7 +81,7 @@ Yes, ***but*** best practice is to use the styling capabilities in the Elementor
 This theme, like WordPress, is licensed under the GPL.
 Use it as your springboard to building a site with ***Elementor***.
 
-Hello Elementor bundles the following third-party resources:
+Baohiem-Daiichi bundles the following third-party resources:
 
 Font Awesome icons for theme screenshot
 License: SIL Open Font License, version 1.1.
