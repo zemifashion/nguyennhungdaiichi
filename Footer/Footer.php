@@ -45,11 +45,11 @@
                             </ul>
                             <div class="topbar-social">
                                 <ul>
-                                    <li><a href=""><img src="../image/facebook@2x.png" alt="facebook"></a></li>
-                                    <li><a href=""><img src="../image/instagram@2x.png" alt="instagram"></a></li>
-                                    <li><a href=""><img src="../image/linkedin@2x.png" alt="linkedin"></a></li>
-                                    <li><a href=""><img src="../image/youtube@2x.png" alt="youtube"></a></li>
-                                    <li><a href=""><img src="../image/Zalo@2x.png" alt="zalo"></a></li>
+                                    <li><a href="javascript:void(0)"><img src="../image/facebook@2x.png" alt="facebook"></a></li>
+                                    <li><a href="javascript:void(0)"><img src="../image/instagram@2x.png" alt="instagram"></a></li>
+                                    <li><a href="javascript:void(0)"><img src="../image/linkedin@2x.png" alt="linkedin"></a></li>
+                                    <li><a href="javascript:void(0)"><img src="../image/youtube@2x.png" alt="youtube"></a></li>
+                                    <li><a href="javascript:void(0)"><img src="../image/Zalo@2x.png" alt="zalo"></a></li>
                                 </ul>
                             </div>
                         </div>

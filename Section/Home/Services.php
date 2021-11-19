@@ -5,7 +5,7 @@
             </div>
             <div class="col-md-12 mt-4">
                 <div class="home-services__slider">
-                    <div class="services-slider__item"><a href="https://dai-ichi.vn/">
+                    <div class="services-slider__item"><a href="javascript:void(0)">
                             <figure class="card text-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                      width="83" height="110" viewBox="0 0 83 110">
@@ -29,7 +29,7 @@
                                 <figcaption><p>Đảm bảo học tập cho con</p></figcaption>
                             </figure>
                         </a></div>
-                    <div class="services-slider__item"><a href="https://dai-ichi.vn/">
+                    <div class="services-slider__item"><a href="javascript:void(0)">
                             <figure class="card text-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                      width="100" height="100" viewBox="0 0 100 100">
@@ -80,7 +80,7 @@
                                 <figcaption><p>An toàn tài chính cho gia đình</p></figcaption>
                             </figure>
                         </a></div>
-                    <div class="services-slider__item"><a href="https://dai-ichi.vn/">
+                    <div class="services-slider__item"><a href="javascript:void(0)">
                             <figure class="card text-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="101.494" height="101.625"
                                      viewBox="0 0 101.494 101.625">
@@ -108,7 +108,7 @@
                                 <figcaption><p>Chăm sóc cha mẹ</p></figcaption>
                             </figure>
                         </a></div>
-                    <div class="services-slider__item"><a href="https://dai-ichi.vn/">
+                    <div class="services-slider__item"><a href="javascript:void(0)">
                             <figure class="card text-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                      width="100" height="104" viewBox="0 0 100 104">
@@ -141,7 +141,7 @@
                                 <figcaption><p>Bảo hiểm sức khỏe cho cả nhà</p></figcaption>
                             </figure>
                         </a></div>
-                    <div class="services-slider__item"><a href="https://dai-ichi.vn/">
+                    <div class="services-slider__item"><a href="javascript:void(0)">
                             <figure class="card text-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                      xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0"
