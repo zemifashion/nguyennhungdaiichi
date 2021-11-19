@@ -15,18 +15,18 @@
             <div class="col-md-4 mb-3">
                 <figure class="card imghvr-slide-up card-covid"><img class="card-img"
                                                                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                                                     data-lazy-src="./assets/img/Ho-tro-khach-hang-Dai-ichi-1.jpg"
+                                                                     data-lazy-src="../../assets/img/Ho-tro-khach-hang-Dai-ichi-1.jpg"
                                                                      width="100%" alt=""/>
                     <noscript><img class="card-img"
-                                   src="./assets/img/Ho-tro-khach-hang-Dai-ichi-1.jpg"
+                                   src="../../assets/img/Ho-tro-khach-hang-Dai-ichi-1.jpg"
                                    width="100%" alt=""/></noscript>
-                    <a href="https://dai-ichi.vn/thong-bao-ho-tro-dac-biet-khach-hang-covid-19/">
+                    <a href="javascript:void(0)">
                         <figcaption class="d-none-hv"><img
                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
                                 data-lazy-src="./assets/img/multiple-users-silhouette.png"
                                 width="50px" alt="">
                             <noscript><img
-                                    src="./assets/img/multiple-users-silhouette.png"
+                                    src="../../assets/img/multiple-users-silhouette.png"
                                     width="50px" alt=""></noscript>
                             <h3>DAI-ICHI LIFE ĐỒNG HÀNH CÙNG QUÝ KHÁCH HÀNG CÙNG VƯỢT QUA DỊCH COVID</h3>
                             <p>Sáng ngày 03/02/2021, Thay mặt công ty TNHH Bảo Hiểm Nhân Thọ Dai-ichi Việt Nam đã ra
@@ -37,18 +37,18 @@
             <div class="col-md-4 mb-3">
                 <figure class="card imghvr-slide-up card-covid"><img class="card-img"
                                                                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                                                     data-lazy-src="./assets/img/chao-xua-tan-suu.png"
+                                                                     data-lazy-src="../../assets/img/chao-xua-tan-suu.png"
                                                                      width="100%" alt=""/>
                     <noscript><img class="card-img"
-                                   src="./assets/img/chao-xua-tan-suu.png"
+                                   src="../../assets/img/chao-xua-tan-suu.png"
                                    width="100%" alt=""/></noscript>
-                    <a href="https://dai-ichi.vn/tin-tuc-khuyen-mai/">
+                    <a href="../../tin-tuc-khuyen-mai/">
                         <figcaption><img
                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                data-lazy-src="https://dai-ichi.vn/wp-content/uploads/2020/11/multiple-users-silhouette.png"
+                                data-lazy-src="../../assets/img/multiple-users-silhouette.png"
                                 width="50px" alt="">
                             <noscript><img
-                                    src="https://dai-ichi.vn/wp-content/uploads/2020/11/multiple-users-silhouette.png"
+                                    src="../../assets/img/multiple-users-silhouette.png"
                                     width="50px" alt=""></noscript>
                             <h3>TÂN SỬU XUÂN SANG - NGẬP TRÀN QUÀ TẶNG</h3>
                             <p>Nhận ngay nhiều phần quà hấp dẫn cùng Dai-ichi khi khách hàng tham gia kỳ phí đầu tiên
@@ -59,18 +59,18 @@
             <div class="col-md-4 mb-3">
                 <figure class="card imghvr-slide-up card-covid"><img class="card-img"
                                                                      src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                                                     data-lazy-src="https://dai-ichi.vn/wp-content/uploads/2021/01/bhcssk-toan-cau-chinh-sua.jpg"
+                                                                     data-lazy-src="../../assets/img/bhcssk-toan-cau-chinh-sua.jpg"
                                                                      width="100%" alt=""/>
                     <noscript><img class="card-img"
-                                   src="https://dai-ichi.vn/wp-content/uploads/2021/01/bhcssk-toan-cau-chinh-sua.jpg"
+                                   src="../../assets/img/bhcssk-toan-cau-chinh-sua.jpg"
                                    width="100%" alt=""/></noscript>
-                    <a href="https://dai-ichi.vn/tin-tuc-khuyen-mai/">
+                    <a href="../../tin-tuc-khuyen-mai/">
                         <figcaption><img
                                 src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                data-lazy-src="https://dai-ichi.vn/wp-content/uploads/2020/11/multiple-users-silhouette.png"
+                                data-lazy-src="../../assets/img/multiple-users-silhouette.png"
                                 width="50px" alt="">
                             <noscript><img
-                                    src="https://dai-ichi.vn/wp-content/uploads/2020/11/multiple-users-silhouette.png"
+                                    src="../../assets/img/multiple-users-silhouette.png"
                                     width="50px" alt=""></noscript>
                             <h3>HÈ VÀNG RỰC RỠ CÙNG NEST BY Dai-ichi life</h3>
                             <p>Cơ hội trúng 2 chỉ vàng 24K PNJ dành cho khách hàng tham gia bảo hiểm thông qua kênh nest

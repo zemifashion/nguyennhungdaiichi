@@ -23,6 +23,6 @@
         </nav>
         <?php include "../Script/Page/Script.php" ?>
         <script data-no-minify="1" async src="../js/lazyload.min.js"></script>
-        <script src="js/b89fed98acc9c08a100727de3f05b84b.js" data-minify="1"></script>
+        <script src="../js/page/b89fed98acc9c08a100727de3f05b84b.js" data-minify="1"></script>
     </body>
 </html>

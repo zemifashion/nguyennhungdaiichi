@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-7"><h2 class="text-danger font-weight-bold mb-4 mt-4">GIỚI THIỆU VỀ DAI-ICHI LIFE VIỆT
                     NAM <br/> CHÚNG TÔI LÀ MỘT CÔNG TY GẮN KẾT <br/> VỚI CUỘC SỐNG</h2>
-                <button class="btn btn-danger btn-readMore"><a href="https://dai-ichi.vn/ve-dai-ichi/">Tìm hiểu về chúng
+                <button class="btn btn-danger btn-readMore"><a href="../../gioi-thieu/">Tìm hiểu về chúng
                         tôi <i class="fas fa-arrow-right"></i></a></button>
             </div>
             <div class="col-md-5 mb-4">

@@ -38,12 +38,10 @@
                         </div>
                         <div class="col-md-4"><h4 class="footer-bottom__title">Liên kết nhanh</h4>
                             <ul>
-                                <li>
-                                    <a href="../san-pham/">Gói Bảo Hiểm Cá Nhân</a></li>
-                                <li>
-                                    <a href="../san-pham/goi-bao-hiem-cho-me-va-be/">Gói Bảo Hiểm Cho Mẹ Và Bé</a></li>
-                                <li>
-                                    <a href="../san-pham/goi-bao-hiem-cho-ca-gia-dinh/">Bảo Hiểm Cho Cả Gia Đình</a></li>
+                                <li><a href="../san-pham/tich-luy-dau-tu">Tích lũy - Đầu tư</a></li>
+                                <li><a href="../san-pham/bao-ve-suc-khoe">BẢO VỆ - SỨC KHỎE</a></li>
+                                <li><a href="../san-pham/goi-bao-hiem-cho-me-va-be/">Gói Bảo Hiểm Cho Mẹ Và Bé</a></li>
+                                <li><a href="../san-pham/goi-bao-hiem-cho-ca-gia-dinh/">Bảo Hiểm Cho Cả Gia Đình</a></li>
                             </ul>
                             <div class="topbar-social">
                                 <ul>

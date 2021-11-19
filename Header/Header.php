@@ -4,36 +4,29 @@
             <div class="topbar-main">
                 <div class="topbar-social">
                     <ul>
-                        <li><a href="https://www.facebook.com/DaiichiLife.TuVanBaoHiemChuyenNghiep/"><img
-                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                        data-lazy-src="https://dai-ichi.vn/wp-content/themes/aia/page-templates/img/icons/facebook@2x.png"
-                                        alt="facebook">
-                                <noscript><img
-                                            src="https://dai-ichi.vn/wp-content/themes/aia/page-templates/img/icons/facebook@2x.png"
-                                            alt="facebook"></noscript>
-                            </a></li>
-                        <li><a href="https://www.youtube.com/channel/UC0qOfWon7JBVAs_DxQudvwQ"><img
-                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                        data-lazy-src="https://dai-ichi.vn/wp-content/themes/aia/page-templates/img/icons/youtube@2x.png"
-                                        alt="youtube">
-                                <noscript><img
-                                            src="https://dai-ichi.vn/wp-content/themes/aia/page-templates/img/icons/youtube@2x.png"
-                                            alt="youtube"></noscript>
-                            </a></li>
-                        <li><a href="https://zalo.me/0971120290"><img
-                                        src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                        data-lazy-src="https://dai-ichi.vn/wp-content/themes/aia/page-templates/img/icons/Zalo@2x.png"
-                                        alt="zalo">
-                                <noscript><img
-                                            src="https://dai-ichi.vn/wp-content/themes/aia/page-templates/img/icons/Zalo@2x.png"
-                                            alt="zalo"></noscript>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-lazy-src="../image/facebook@2x.png" alt="facebook">
+                                <noscript><img src="../image/facebook@2x.png" alt="facebook"></noscript>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC0qOfWon7JBVAs_DxQudvwQ">
+                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-lazy-src="../youtube@2x.png" alt="youtube">
+                                <noscript><img src="../image/youtube@2x.png" alt="youtube"></noscript>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://zalo.me/0971120290">
+                                <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-lazy-src="../image/Zalo@2x.png" alt="zalo">
+                                <noscript><img src="../image/Zalo@2x.png" alt="zalo"></noscript>
                             </a></li>
                     </ul>
                 </div>
                 <div class="topbar-nav">
                     <ul>
-                        <li><a href="https://dai-ichi.vn/tuyen-dung/">Ứng tuyển</a></li>
-                        <li><a href="https://dai-ichi.vn/lien-he/">Liên hệ</a></li>
+                        <li><a href="../tuyen-dung/">Ứng tuyển</a></li>
+                        <li><a href="../lien-he/">Liên hệ</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,19 +35,21 @@
     <div class="header-main">
         <nav class="navbar navbar-expand-md navbar-light main-nav">
             <div class="container">
-                <div class="header-main__left"><a href="#menu-mobile" class="menu-mobile icon-menu-mobile"><i
-                                class="fa fa-bars"></i><span></span></a><a
-                            class="navbar-brand order-first order-md-0 mx-0 header-main__logo" href="/"><img
-                                src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E"
-                                data-lazy-src="assets/logo/dai-ichi-logo.png" alt=""
-                                width="200">
-                        <noscript><img src="assets/logo/dai-ichi-logo.png" alt=""
-                                       width="200"></noscript>
+                <div class="header-main__left">
+                    <a href="#menu-mobile" class="menu-mobile icon-menu-mobile">
+                        <i class="fa fa-bars"></i><span></span>
+                    </a>
+                    <a class="navbar-brand order-first order-md-0 mx-0 header-main__logo" href="/">
+                        <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-lazy-src="assets/logo/dai-ichi-logo.png" alt="" width="200">
+                        <noscript><img src="assets/logo/dai-ichi-logo.png" alt="" width="200"></noscript>
                     </a></div>
                 <div class="header-main__right">
                     <div class="contact-box">
                         <div class="contact-box__icon"><i class="fas fa-envelope"></i></div>
-                        <div class="contact-box__text"><strong><a href="mailto:baohiem.daiichilifehanoi1@gmail.com">baohiem.daiichilifehanoi1@gmail.com</a></strong><span>Gửi thông tin cho chúng tôi</span>
+                        <div class="contact-box__text">
+                            <strong>
+                                <a href="mailto:baohiem.daiichilifehanoi1@gmail.com">baohiem.daiichilifehanoi1@gmail.com</a>
+                            </strong><span>Gửi thông tin cho chúng tôi</span>
                         </div>
                     </div>
                     <div class="contact-box">
