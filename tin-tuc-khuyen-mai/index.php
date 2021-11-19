@@ -3,7 +3,7 @@
 <?php include "../Head/Page/Head.php" ?>
 <body data-rsssl=1>
 <?php include "../Header/Page/Header.php" ?>
-<?php include "../Section/Section/san-pham.php" ?>
+<?php include "content.php" ?>
 <?php include "../Footer/Footer.php" ?>
 <?php include "../MenuMobile/MenuMobile.php"?>
 <?php include "../Script/Page/Script.php" ?>
