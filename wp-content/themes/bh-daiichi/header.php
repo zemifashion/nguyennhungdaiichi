@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 bh_daiichi_body_open();
 
 if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {
-	if ( did_action( 'elementor/loaded' ) && hello_header_footer_experiment_active() ) {
+	if ( did_action( 'elementor/loaded' ) && bh_header_footer_experiment_active() ) {
 		get_template_part( 'template-parts/dynamic-header' );
 	} else {
 		get_template_part( 'template-parts/header' );

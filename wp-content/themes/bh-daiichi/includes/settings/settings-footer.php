@@ -36,7 +36,7 @@ class Settings_Footer extends Tab_Base {
 	protected function register_tab_controls() {
 
 		$this->start_controls_section(
-			'hello_footer_section',
+			'bh_footer_section',
 			[
 				'tab' => 'hello-settings-footer',
 				'label' => __( 'Footer', 'bh-daiichi' ),
@@ -44,7 +44,7 @@ class Settings_Footer extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_footer_logo_display',
+			'bh_footer_logo_display',
 			[
 				'type' => Controls_Manager::SWITCHER,
 				'label' => __( 'Site Logo', 'bh-daiichi' ),
@@ -56,7 +56,7 @@ class Settings_Footer extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_footer_tagline_display',
+			'bh_footer_tagline_display',
 			[
 				'type' => Controls_Manager::SWITCHER,
 				'label' => __( 'Tagline', 'bh-daiichi' ),
@@ -68,7 +68,7 @@ class Settings_Footer extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_footer_menu_display',
+			'bh_footer_menu_display',
 			[
 				'type' => Controls_Manager::SWITCHER,
 				'label' => __( 'Menu', 'bh-daiichi' ),
@@ -80,7 +80,7 @@ class Settings_Footer extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_footer_copyright_display',
+			'bh_footer_copyright_display',
 			[
 				'type' => Controls_Manager::SWITCHER,
 				'label' => __( 'Copyright', 'bh-daiichi' ),
@@ -92,7 +92,7 @@ class Settings_Footer extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_footer_layout',
+			'bh_footer_layout',
 			[
 				'type' => Controls_Manager::SELECT,
 				'label' => __( 'Layout', 'bh-daiichi' ),
@@ -107,7 +107,7 @@ class Settings_Footer extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_footer_width',
+			'bh_footer_width',
 			[
 				'type' => Controls_Manager::SELECT,
 				'label' => __( 'Width', 'bh-daiichi' ),
@@ -121,7 +121,7 @@ class Settings_Footer extends Tab_Base {
 		);
 
 		$this->add_responsive_control(
-			'hello_footer_custom_width',
+			'bh_footer_custom_width',
 			[
 				'type' => Controls_Manager::SLIDER,
 				'label' => __( 'Content Width', 'bh-daiichi' ),
@@ -140,7 +140,7 @@ class Settings_Footer extends Tab_Base {
 					],
 				],
 				'condition' => [
-					'hello_footer_width' => 'boxed',
+					'bh_footer_width' => 'boxed',
 				],
 				'selectors' => [
 					'.site-footer .footer-inner' => 'width: {{SIZE}}{{UNIT}}; max-width: 100%;',
@@ -149,7 +149,7 @@ class Settings_Footer extends Tab_Base {
 		);
 
 		$this->add_responsive_control(
-			'hello_footer_gap',
+			'bh_footer_gap',
 			[
 				'type' => Controls_Manager::SLIDER,
 				'label' => __( 'Gap', 'bh-daiichi' ),
@@ -171,7 +171,7 @@ class Settings_Footer extends Tab_Base {
 					'.site-footer' => 'padding-right: {{SIZE}}{{UNIT}}; padding-left: {{SIZE}}{{UNIT}}',
 				],
 				'condition' => [
-					'hello_footer_layout!' => 'stacked',
+					'bh_footer_layout!' => 'stacked',
 				],
 			]
 		);
@@ -179,7 +179,7 @@ class Settings_Footer extends Tab_Base {
 		$this->add_group_control(
 			Group_Control_Background::get_type(),
 			[
-				'name' => 'hello_footer_background',
+				'name' => 'bh_footer_background',
 				'label' => __( 'Background', 'bh-daiichi' ),
 				'types' => [ 'classic', 'gradient' ],
 				'selector' => '.site-footer',
@@ -189,18 +189,18 @@ class Settings_Footer extends Tab_Base {
 		$this->end_controls_section();
 
 		$this->start_controls_section(
-			'hello_footer_logo_section',
+			'bh_footer_logo_section',
 			[
 				'tab' => 'hello-settings-footer',
 				'label' => __( 'Site Logo', 'bh-daiichi' ),
 				'condition' => [
-					'hello_footer_logo_display!' => '',
+					'bh_footer_logo_display!' => '',
 				],
 			]
 		);
 
 		$this->add_control(
-			'hello_footer_logo_type',
+			'bh_footer_logo_type',
 			[
 				'label' => __( 'Type', 'bh-daiichi' ),
 				'type' => Controls_Manager::SELECT,
@@ -214,7 +214,7 @@ class Settings_Footer extends Tab_Base {
 		);
 
 		$this->add_responsive_control(
-			'hello_footer_logo_width',
+			'bh_footer_logo_width',
 			[
 				'type' => Controls_Manager::SLIDER,
 				'label' => __( 'Logo Width', 'bh-daiichi' ),
@@ -235,8 +235,8 @@ class Settings_Footer extends Tab_Base {
 					],
 				],
 				'condition' => [
-					'hello_footer_logo_display' => 'yes',
-					'hello_footer_logo_type' => 'logo',
+					'bh_footer_logo_display' => 'yes',
+					'bh_footer_logo_type' => 'logo',
 				],
 				'selectors' => [
 					'.site-footer .site-branding .site-logo img' => 'width: {{SIZE}}{{UNIT}}; max-width: {{SIZE}}{{UNIT}}',
@@ -245,13 +245,13 @@ class Settings_Footer extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_footer_title_color',
+			'bh_footer_title_color',
 			[
 				'label' => __( 'Text Color', 'bh-daiichi' ),
 				'type' => Controls_Manager::COLOR,
 				'condition' => [
-					'hello_footer_logo_display' => 'yes',
-					'hello_footer_logo_type' => 'title',
+					'bh_footer_logo_display' => 'yes',
+					'bh_footer_logo_type' => 'title',
 				],
 				'selectors' => [
 					'.site-footer h4.site-title a' => 'color: {{VALUE}};',
@@ -262,11 +262,11 @@ class Settings_Footer extends Tab_Base {
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
-				'name' => 'hello_footer_title_typography',
+				'name' => 'bh_footer_title_typography',
 				'label' => __( 'Typography', 'bh-daiichi' ),
 				'condition' => [
-					'hello_footer_logo_display' => 'yes',
-					'hello_footer_logo_type' => 'title',
+					'bh_footer_logo_display' => 'yes',
+					'bh_footer_logo_type' => 'title',
 				],
 				'selector' => '.site-footer h4.site-title',
 
@@ -274,14 +274,14 @@ class Settings_Footer extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_footer_title_link',
+			'bh_footer_title_link',
 			[
 				'type' => Controls_Manager::RAW_HTML,
 				'raw' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s title and tagline', 'bh-daiichi' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
 				'content_classes' => 'elementor-control-field-description',
 				'condition' => [
-					'hello_footer_logo_display' => 'yes',
-					'hello_footer_logo_type' => 'title',
+					'bh_footer_logo_display' => 'yes',
+					'bh_footer_logo_type' => 'title',
 				],
 			]
 		);
@@ -289,23 +289,23 @@ class Settings_Footer extends Tab_Base {
 		$this->end_controls_section();
 
 		$this->start_controls_section(
-			'hello_footer_tagline',
+			'bh_footer_tagline',
 			[
 				'tab' => 'hello-settings-footer',
 				'label' => __( 'Tagline', 'bh-daiichi' ),
 				'condition' => [
-					'hello_footer_tagline_display' => 'yes',
+					'bh_footer_tagline_display' => 'yes',
 				],
 			]
 		);
 
 		$this->add_control(
-			'hello_footer_tagline_color',
+			'bh_footer_tagline_color',
 			[
 				'label' => __( 'Text Color', 'bh-daiichi' ),
 				'type' => Controls_Manager::COLOR,
 				'condition' => [
-					'hello_footer_tagline_display' => 'yes',
+					'bh_footer_tagline_display' => 'yes',
 				],
 				'selectors' => [
 					'.site-footer .site-description' => 'color: {{VALUE}};',
@@ -316,17 +316,17 @@ class Settings_Footer extends Tab_Base {
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
-				'name' => 'hello_footer_tagline_typography',
+				'name' => 'bh_footer_tagline_typography',
 				'label' => __( 'Typography', 'bh-daiichi' ),
 				'condition' => [
-					'hello_footer_tagline_display' => 'yes',
+					'bh_footer_tagline_display' => 'yes',
 				],
 				'selector' => '.site-footer .site-description',
 			]
 		);
 
 		$this->add_control(
-			'hello_footer_tagline_link',
+			'bh_footer_tagline_link',
 			[
 				'type' => Controls_Manager::RAW_HTML,
 				'raw' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s title and tagline', 'bh-daiichi' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
@@ -337,12 +337,12 @@ class Settings_Footer extends Tab_Base {
 		$this->end_controls_section();
 
 		$this->start_controls_section(
-			'hello_footer_menu_tab',
+			'bh_footer_menu_tab',
 			[
 				'tab' => 'hello-settings-footer',
 				'label' => __( 'Menu', 'bh-daiichi' ),
 				'condition' => [
-					'hello_footer_menu_display' => 'yes',
+					'bh_footer_menu_display' => 'yes',
 				],
 			]
 		);
@@ -356,7 +356,7 @@ class Settings_Footer extends Tab_Base {
 
 		if ( 1 === count( $menus ) ) {
 			$this->add_control(
-				'hello_footer_menu_notice',
+				'bh_footer_menu_notice',
 				[
 					'type' => Controls_Manager::RAW_HTML,
 					'raw' => '<strong>' . __( 'There are no menus in your site.', 'bh-daiichi' ) . '</strong><br>' . sprintf( __( 'Go to <a href="%s" target="_blank">Menus screen</a> to create one.', 'bh-daiichi' ), admin_url( 'nav-menus.php?action=edit&menu=0' ) ),
@@ -366,7 +366,7 @@ class Settings_Footer extends Tab_Base {
 			);
 		} else {
 			$this->add_control(
-				'hello_footer_menu',
+				'bh_footer_menu',
 				[
 					'label' => __( 'Menu', 'bh-daiichi' ),
 					'type' => Controls_Manager::SELECT,
@@ -377,7 +377,7 @@ class Settings_Footer extends Tab_Base {
 			);
 
 			$this->add_control(
-				'hello_footer_menu_warning',
+				'bh_footer_menu_warning',
 				[
 					'type' => Controls_Manager::RAW_HTML,
 					'raw' => __( 'Changes will be reflected in the preview only after the page reloads.', 'bh-daiichi' ),
@@ -386,7 +386,7 @@ class Settings_Footer extends Tab_Base {
 			);
 
 			$this->add_control(
-				'hello_footer_menu_color',
+				'bh_footer_menu_color',
 				[
 					'label' => __( 'Color', 'bh-daiichi' ),
 					'type' => Controls_Manager::COLOR,
@@ -399,7 +399,7 @@ class Settings_Footer extends Tab_Base {
 			$this->add_group_control(
 				Group_Control_Typography::get_type(),
 				[
-					'name' => 'hello_footer_menu_typography',
+					'name' => 'bh_footer_menu_typography',
 					'label' => __( 'Typography', 'bh-daiichi' ),
 					'selector' => 'footer .footer-inner .site-navigation a',
 				]
@@ -409,7 +409,7 @@ class Settings_Footer extends Tab_Base {
 		$this->end_controls_section();
 
 		$this->start_controls_section(
-			'hello_footer_copyright_section',
+			'bh_footer_copyright_section',
 			[
 				'tab' => 'hello-settings-footer',
 				'label' => __( 'Copyright', 'bh-daiichi' ),
@@ -417,7 +417,7 @@ class Settings_Footer extends Tab_Base {
 					'relation' => 'and',
 					'terms' => [
 						[
-							'name' => 'hello_footer_copyright_display',
+							'name' => 'bh_footer_copyright_display',
 							'operator' => '=',
 							'value' => 'yes',
 						],
@@ -427,7 +427,7 @@ class Settings_Footer extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_footer_copyright_text',
+			'bh_footer_copyright_text',
 			[
 				'type' => Controls_Manager::TEXTAREA,
 				'default' => __( 'All rights reserved', 'bh-daiichi' ),
@@ -435,12 +435,12 @@ class Settings_Footer extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_footer_copyright_color',
+			'bh_footer_copyright_color',
 			[
 				'label' => __( 'Text Color', 'bh-daiichi' ),
 				'type' => Controls_Manager::COLOR,
 				'condition' => [
-					'hello_footer_copyright_display' => 'yes',
+					'bh_footer_copyright_display' => 'yes',
 				],
 				'selectors' => [
 					'.site-footer .copyright p' => 'color: {{VALUE}};',
@@ -451,10 +451,10 @@ class Settings_Footer extends Tab_Base {
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
-				'name' => 'hello_footer_copyright_typography',
+				'name' => 'bh_footer_copyright_typography',
 				'label' => __( 'Typography', 'bh-daiichi' ),
 				'condition' => [
-					'hello_footer_copyright_display' => 'yes',
+					'bh_footer_copyright_display' => 'yes',
 				],
 				'selector' => '.site-footer .copyright p',
 			]
@@ -465,8 +465,8 @@ class Settings_Footer extends Tab_Base {
 
 	public function on_save( $data ) {
 		// Save chosen footer menu to the WP settings.
-		if ( isset( $data['settings']['hello_footer_menu'] ) ) {
-			$menu_id = $data['settings']['hello_footer_menu'];
+		if ( isset( $data['settings']['bh_footer_menu'] ) ) {
+			$menu_id = $data['settings']['bh_footer_menu'];
 			$locations = get_theme_mod( 'nav_menu_locations' );
 			$locations['menu-2'] = (int) $menu_id;
 			set_theme_mod( 'nav_menu_locations', $locations );

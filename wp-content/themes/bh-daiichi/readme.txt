@@ -1,4 +1,4 @@
-=== Hello Elementor ===
+=== BH Daiichi ===
 
 Contributors: elemntor, KingYes, ariel.k, jzaltzberg, mati1000, bainternet
 Requires at least: 4.7
@@ -12,7 +12,7 @@ Tags: custom-menu, custom-logo, featured-images, rtl-language-support, threaded-
 
 A lightweight, plain-vanilla theme for Elementor page builder.
 
-***Hello Elementor*** is distributed under the terms of the GNU GPL v3 or later.
+***BH Daiichi*** is distributed under the terms of the GNU GPL v3 or later.
 
 == Description ==
 
@@ -25,7 +25,7 @@ Screenshot's images & icons are licensed under: Creative Commons (CC0), https://
 == Installation ==
 
 1. In your site's admin panel, go to Appearance > Themes and click `Add New`.
-2. Type "Hello Elementor" in the search field.
+2. Type "BH Daiichi" in the search field.
 3. Click `Install` and then `Activate` to start using the theme.
 4. Navigate to Appearance > Customize in your admin panel and customize to your needs.
 5. A notice box may appear, recommending you to install Elementor Page Builder Plugin. You can either use it or any other editor.
@@ -55,22 +55,22 @@ To prevent the loading of any of the these settings, use the following as boiler
 add_filter( 'choose-from-the-list-below', '__return_false' );
 ```
 
-* `hello_elementor_enqueue_style`                 enqueue style
-* `hello_elementor_enqueue_theme_style`           load theme-specific style (default: load)
-* `hello_elementor_load_textdomain`               load theme's textdomain
-* `hello_elementor_register_menus`                register the theme's default menu location
-* `hello_elementor_add_theme_support`             register the various supported features
-* `hello_elementor_add_woocommerce_support`       register woocommerce features, including product-gallery zoom, swipe & lightbox features
-* `hello_elementor_register_elementor_locations`  register elementor settings
-* `hello_elementor_content_width`                 set default content width to 800px
-* `hello_elementor_page_title`                    show\hide page title (default: show)
-* `hello_elementor_viewport_content`              modify `content` of `viewport` meta in header
+* `bh_daiichi_enqueue_style`                 enqueue style
+* `bh_daiichi_enqueue_theme_style`           load theme-specific style (default: load)
+* `bh_daiichi_load_textdomain`               load theme's textdomain
+* `bh_daiichi_register_menus`                register the theme's default menu location
+* `bh_daiichi_add_theme_support`             register the various supported features
+* `bh_daiichi_add_woocommerce_support`       register woocommerce features, including product-gallery zoom, swipe & lightbox features
+* `bh_daiichi_register_elementor_locations`  register elementor settings
+* `bh_daiichi_content_width`                 set default content width to 800px
+* `bh_daiichi_page_title`                    show\hide page title (default: show)
+* `bh_daiichi_viewport_content`              modify `content` of `viewport` meta in header
 
 == Frequently Asked Questions ==
 
 **Does this theme support any plugins?**
 
-Hello Elementor includes support for WooCommerce.
+BH Daiichi includes support for WooCommerce.
 
 **Can Font Styles be added thru the theme's css file?**
 
@@ -81,7 +81,7 @@ Yes, ***but*** best practice is to use the styling capabilities in the Elementor
 This theme, like WordPress, is licensed under the GPL.
 Use it as your springboard to building a site with ***Elementor***.
 
-Hello Elementor bundles the following third-party resources:
+BH Daiichi bundles the following third-party resources:
 
 Font Awesome icons for theme screenshot
 License: SIL Open Font License, version 1.1.
@@ -129,7 +129,7 @@ Source: https://stocksnap.io/photo/4B83RD7BV9
 
 = 2.1.2 - 2019-06-19 =
 * Tweak: Added theme version to enqueued styles
-* Tweak: Remove header tags with `hello_elementor_page_title` filter
+* Tweak: Remove header tags with `bh_daiichi_page_title` filter
 
 = 2.1.1 - 2019-06-13 =
 * Tweak: Rename `Install Elementor Now` button to `Install Elementor`
@@ -137,8 +137,8 @@ Source: https://stocksnap.io/photo/4B83RD7BV9
 = 2.1.0 - 2019-06-12 =
 * New: Added basic theme styling
 * New: Added tagline under the site name in header
-* New: Added `hello_elementor_page_title` filter for show\hide page title
-* New: Added `hello_elementor_enqueue_theme_style` filter for enqueue theme-specific style
+* New: Added `bh_daiichi_page_title` filter for show\hide page title
+* New: Added `bh_daiichi_enqueue_theme_style` filter for enqueue theme-specific style
 * Tweak: Hide site name & tagline if logo file is exist
 * Tweak: Hide default page list when there is no primary menu
 * Tweak: Removed `#main` in `archive.php`, `single.php`, `search.php` & `404.php` files
@@ -167,7 +167,7 @@ Source: https://stocksnap.io/photo/4B83RD7BV9
 * Tweak: Removed `accessibility-ready` tag
 
 = 2.0.2 - 2019-05-13 =
-* Tweak: Added `hello_elementor_content_width` filter, as per WordePress best practice
+* Tweak: Added `bh_daiichi_content_width` filter, as per WordePress best practice
 
 = 2.0.1 - 2019-05-12 =
 * Tweak: Updated theme screenshot (following comment by WP Theme Review team)
@@ -178,7 +178,7 @@ Source: https://stocksnap.io/photo/4B83RD7BV9
 * Tweak: Remove duplicated call to `add_theme_support( 'custom-logo')`
 * Tweak: Readme file grammar & spelling
 * Tweak: Update `Tested Up to 5.2`
-* Tweak: Change functions.php methods names prefix from `hello_elementor_theme_` to `hello_elementor_`
+* Tweak: Change functions.php methods names prefix from `bh_daiichi_theme_` to `bh_daiichi_`
 * Tweak: Change hook names to fit theme's name. Old hooks are deprecated, users are urged to update their code where needed
 * Tweak: Update style for `img`, `textarea`, 'label'
 

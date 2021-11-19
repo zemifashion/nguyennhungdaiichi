@@ -9,8 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @return void
  */
-add_action( 'customize_register', 'hello_customizer_register' );
-function hello_customizer_register( $wp_customize ) {
+add_action( 'customize_register', 'bh_customizer_register' );
+function bh_customizer_register( $wp_customize ) {
 	require get_template_directory() . '/includes/customizer/elementor-upsell.php';
 
 	$wp_customize->add_section(
@@ -47,8 +47,8 @@ function hello_customizer_register( $wp_customize ) {
  *
  * @return string HTML to use in the customizer panel
  */
-add_action( 'admin_enqueue_scripts', 'hello_customizer_print_styles' );
-function hello_customizer_print_styles() {
+add_action( 'admin_enqueue_scripts', 'bh_customizer_print_styles' );
+function bh_customizer_print_styles() {
 
 	$min_suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 

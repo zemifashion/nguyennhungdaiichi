@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 add_action( 'elementor/init', 'bh_daiichi_settings_init' );
 
 function bh_daiichi_settings_init() {
-	if ( hello_header_footer_experiment_active() ) {
+	if ( bh_header_footer_experiment_active() ) {
 		require 'settings/settings-header.php';
 		require 'settings/settings-footer.php';
 
@@ -55,7 +55,7 @@ function bh_daiichi_get_setting( $setting_id ) {
  * @param  string $setting_id
  * @return string|array same as the Elementor internal function does.
  */
-function hello_show_or_hide( $setting_id ) {
+function bh_show_or_hide( $setting_id ) {
 	return ( 'yes' === bh_daiichi_get_setting( $setting_id ) ? 'show' : 'hide' );
 }
 
@@ -64,22 +64,22 @@ function hello_show_or_hide( $setting_id ) {
  *
  * @return string
  */
-function hello_get_header_layout_class() {
+function bh_get_header_layout_class() {
 	$layout_classes = [];
 
-	$header_layout = bh_daiichi_get_setting( 'hello_header_layout' );
+	$header_layout = bh_daiichi_get_setting( 'bh_header_layout' );
 	if ( 'inverted' === $header_layout ) {
 		$layout_classes[] = 'header-inverted';
 	} elseif ( 'stacked' === $header_layout ) {
 		$layout_classes[] = 'header-stacked';
 	}
 
-	$header_width = bh_daiichi_get_setting( 'hello_header_width' );
+	$header_width = bh_daiichi_get_setting( 'bh_header_width' );
 	if ( 'full-width' === $header_width ) {
 		$layout_classes[] = 'header-full-width';
 	}
 
-	$header_menu_dropdown = bh_daiichi_get_setting( 'hello_header_menu_dropdown' );
+	$header_menu_dropdown = bh_daiichi_get_setting( 'bh_header_menu_dropdown' );
 	if ( 'tablet' === $header_menu_dropdown ) {
 		$layout_classes[] = 'menu-dropdown-tablet';
 	} elseif ( 'mobile' === $header_menu_dropdown ) {
@@ -88,8 +88,8 @@ function hello_get_header_layout_class() {
 		$layout_classes[] = 'menu-dropdown-none';
 	}
 
-	$hello_header_menu_layout = bh_daiichi_get_setting( 'hello_header_menu_layout' );
-	if ( 'dropdown' === $hello_header_menu_layout ) {
+	$bh_header_menu_layout = bh_daiichi_get_setting( 'bh_header_menu_layout' );
+	if ( 'dropdown' === $bh_header_menu_layout ) {
 		$layout_classes[] = 'menu-layout-dropdown';
 	}
 
@@ -101,8 +101,8 @@ function hello_get_header_layout_class() {
  *
  * @return string
  */
-function hello_get_footer_layout_class() {
-	$footer_layout = bh_daiichi_get_setting( 'hello_footer_layout' );
+function bh_get_footer_layout_class() {
+	$footer_layout = bh_daiichi_get_setting( 'bh_footer_layout' );
 
 	$layout_classes = [];
 
@@ -112,13 +112,13 @@ function hello_get_footer_layout_class() {
 		$layout_classes[] = 'footer-stacked';
 	}
 
-	$footer_width = bh_daiichi_get_setting( 'hello_footer_width' );
+	$footer_width = bh_daiichi_get_setting( 'bh_footer_width' );
 
 	if ( 'full-width' === $footer_width ) {
 		$layout_classes[] = 'footer-full-width';
 	}
 
-	if ( bh_daiichi_get_setting( 'hello_footer_copyright_display' ) && '' !== bh_daiichi_get_setting( 'hello_footer_copyright_text' ) ) {
+	if ( bh_daiichi_get_setting( 'bh_footer_copyright_display' ) && '' !== bh_daiichi_get_setting( 'bh_footer_copyright_text' ) ) {
 		$layout_classes[] = 'footer-has-copyright';
 	}
 
@@ -126,7 +126,7 @@ function hello_get_footer_layout_class() {
 }
 
 add_action( 'elementor/editor/after_enqueue_scripts', function() {
-	if ( hello_header_footer_experiment_active() ) {
+	if ( bh_header_footer_experiment_active() ) {
 		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
 		wp_enqueue_script(
@@ -147,7 +147,7 @@ add_action( 'elementor/editor/after_enqueue_scripts', function() {
 } );
 
 add_action( 'wp_enqueue_scripts', function() {
-	if ( ! hello_header_footer_experiment_active() ) {
+	if ( ! bh_header_footer_experiment_active() ) {
 		return;
 	}
 
@@ -170,14 +170,14 @@ add_action( 'wp_enqueue_scripts', function() {
  *
  * @return bool
  */
-function hello_get_header_display() {
+function bh_get_header_display() {
 	$is_editor = isset( $_GET['elementor-preview'] );
 
 	return (
 		$is_editor
-		|| bh_daiichi_get_setting( 'hello_header_logo_display' )
-		|| bh_daiichi_get_setting( 'hello_header_tagline_display' )
-		|| bh_daiichi_get_setting( 'hello_header_menu_display' )
+		|| bh_daiichi_get_setting( 'bh_header_logo_display' )
+		|| bh_daiichi_get_setting( 'bh_header_tagline_display' )
+		|| bh_daiichi_get_setting( 'bh_header_menu_display' )
 	);
 }
 
@@ -186,15 +186,15 @@ function hello_get_header_display() {
  *
  * @return bool
  */
-function hello_get_footer_display() {
+function bh_get_footer_display() {
 	$is_editor = isset( $_GET['elementor-preview'] );
 
 	return (
 		$is_editor
-		|| bh_daiichi_get_setting( 'hello_footer_logo_display' )
-		|| bh_daiichi_get_setting( 'hello_footer_tagline_display' )
-		|| bh_daiichi_get_setting( 'hello_footer_menu_display' )
-		|| bh_daiichi_get_setting( 'hello_footer_copyright_display' )
+		|| bh_daiichi_get_setting( 'bh_footer_logo_display' )
+		|| bh_daiichi_get_setting( 'bh_footer_tagline_display' )
+		|| bh_daiichi_get_setting( 'bh_footer_menu_display' )
+		|| bh_daiichi_get_setting( 'bh_footer_copyright_display' )
 	);
 }
 
@@ -217,7 +217,7 @@ add_action( 'elementor/experiments/default-features-registered', function( \Elem
 /**
  * Helper function to check if Header & Footer Experiment is Active/Inactive
  */
-function hello_header_footer_experiment_active() {
+function bh_header_footer_experiment_active() {
 	// If Elementor is not active, return false
 	if ( ! did_action( 'elementor/loaded' ) ) {
 		return false;

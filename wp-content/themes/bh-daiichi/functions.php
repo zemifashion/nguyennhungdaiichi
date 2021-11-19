@@ -23,7 +23,7 @@ if ( ! function_exists( 'bh_daiichi_setup' ) ) {
 	 */
 	function bh_daiichi_setup() {
 		if ( is_admin() ) {
-			hello_maybe_update_theme_version_in_db();
+			bh_maybe_update_theme_version_in_db();
 		}
 
 		$hook_result = apply_filters_deprecated( 'elementor_bh_theme_load_textdomain', [ true ], '2.0', 'bh_daiichi_load_textdomain' );
@@ -92,7 +92,7 @@ if ( ! function_exists( 'bh_daiichi_setup' ) ) {
 }
 add_action( 'after_setup_theme', 'bh_daiichi_setup' );
 
-function hello_maybe_update_theme_version_in_db() {
+function bh_maybe_update_theme_version_in_db() {
 	$theme_version_option_name = 'bh_theme_version';
 	// The theme version saved in the database.
 	$bh_theme_db_version = get_option( $theme_version_option_name );
@@ -177,12 +177,12 @@ require get_template_directory() . '/includes/elementor-functions.php';
 /**
  * Include customizer registration functions
 */
-function hello_register_customizer_functions() {
-	if ( hello_header_footer_experiment_active() && is_customize_preview() ) {
+function bh_register_customizer_functions() {
+	if ( bh_header_footer_experiment_active() && is_customize_preview() ) {
 		require get_template_directory() . '/includes/customizer-functions.php';
 	}
 }
-add_action( 'init', 'hello_register_customizer_functions' );
+add_action( 'init', 'bh_register_customizer_functions' );
 
 if ( ! function_exists( 'bh_daiichi_check_hide_title' ) ) {
 	/**

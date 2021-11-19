@@ -37,7 +37,7 @@ class Settings_Header extends Tab_Base {
 
 	protected function register_tab_controls() {
 		$this->start_controls_section(
-			'hello_header_section',
+			'bh_header_section',
 			[
 				'tab' => 'hello-settings-header',
 				'label' => __( 'Header', 'bh-daiichi' ),
@@ -45,7 +45,7 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_header_logo_display',
+			'bh_header_logo_display',
 			[
 				'type' => Controls_Manager::SWITCHER,
 				'label' => __( 'Site Logo', 'bh-daiichi' ),
@@ -56,7 +56,7 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_header_tagline_display',
+			'bh_header_tagline_display',
 			[
 				'type' => Controls_Manager::SWITCHER,
 				'label' => __( 'Tagline', 'bh-daiichi' ),
@@ -67,7 +67,7 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_header_menu_display',
+			'bh_header_menu_display',
 			[
 				'type' => Controls_Manager::SWITCHER,
 				'label' => __( 'Menu', 'bh-daiichi' ),
@@ -78,7 +78,7 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_header_layout',
+			'bh_header_layout',
 			[
 				'type' => Controls_Manager::SELECT,
 				'label' => __( 'Layout', 'bh-daiichi' ),
@@ -93,7 +93,7 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_header_width',
+			'bh_header_width',
 			[
 				'type' => Controls_Manager::SELECT,
 				'label' => __( 'Width', 'bh-daiichi' ),
@@ -107,7 +107,7 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_responsive_control(
-			'hello_header_custom_width',
+			'bh_header_custom_width',
 			[
 				'type' => Controls_Manager::SLIDER,
 				'label' => __( 'Content Width', 'bh-daiichi' ),
@@ -126,7 +126,7 @@ class Settings_Header extends Tab_Base {
 					],
 				],
 				'condition' => [
-					'hello_header_width' => 'boxed',
+					'bh_header_width' => 'boxed',
 				],
 				'selectors' => [
 					'.site-header .header-inner' => 'width: {{SIZE}}{{UNIT}}; max-width: 100%;',
@@ -135,7 +135,7 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_responsive_control(
-			'hello_header_gap',
+			'bh_header_gap',
 			[
 				'type' => Controls_Manager::SLIDER,
 				'label' => __( 'Gap', 'bh-daiichi' ),
@@ -163,7 +163,7 @@ class Settings_Header extends Tab_Base {
 					'relation' => 'and',
 					'terms' => [
 						[
-							'name' => 'hello_header_layout',
+							'name' => 'bh_header_layout',
 							'operator' => '!=',
 							'value' => 'stacked',
 						],
@@ -175,7 +175,7 @@ class Settings_Header extends Tab_Base {
 		$this->add_group_control(
 			Group_Control_Background::get_type(),
 			[
-				'name' => 'hello_header_background',
+				'name' => 'bh_header_background',
 				'label' => __( 'Background', 'bh-daiichi' ),
 				'types' => [ 'classic', 'gradient' ],
 				'selector' => '.site-header',
@@ -185,7 +185,7 @@ class Settings_Header extends Tab_Base {
 		$this->end_controls_section();
 
 		$this->start_controls_section(
-			'hello_header_logo_section',
+			'bh_header_logo_section',
 			[
 				'tab' => 'hello-settings-header',
 				'label' => __( 'Site Logo', 'bh-daiichi' ),
@@ -193,7 +193,7 @@ class Settings_Header extends Tab_Base {
 					'relation' => 'and',
 					'terms' => [
 						[
-							'name' => 'hello_header_logo_display',
+							'name' => 'bh_header_logo_display',
 							'operator' => '=',
 							'value' => 'yes',
 						],
@@ -203,7 +203,7 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_header_logo_type',
+			'bh_header_logo_type',
 			[
 				'label' => __( 'Type', 'bh-daiichi' ),
 				'type' => Controls_Manager::SELECT,
@@ -217,7 +217,7 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_responsive_control(
-			'hello_header_logo_width',
+			'bh_header_logo_width',
 			[
 				'type' => Controls_Manager::SLIDER,
 				'label' => __( 'Logo Width', 'bh-daiichi' ),
@@ -238,8 +238,8 @@ class Settings_Header extends Tab_Base {
 					],
 				],
 				'condition' => [
-					'hello_header_logo_display' => 'yes',
-					'hello_header_logo_type' => 'logo',
+					'bh_header_logo_display' => 'yes',
+					'bh_header_logo_type' => 'logo',
 				],
 				'selectors' => [
 					'.site-header .site-branding .site-logo img' => 'width: {{SIZE}}{{UNIT}}; max-width: {{SIZE}}{{UNIT}}',
@@ -248,13 +248,13 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_header_title_color',
+			'bh_header_title_color',
 			[
 				'label' => __( 'Text Color', 'bh-daiichi' ),
 				'type' => Controls_Manager::COLOR,
 				'condition' => [
-					'hello_header_logo_display' => 'yes',
-					'hello_header_logo_type' => 'title',
+					'bh_header_logo_display' => 'yes',
+					'bh_header_logo_type' => 'title',
 				],
 				'selectors' => [
 					'.site-header h1.site-title a' => 'color: {{VALUE}};',
@@ -265,26 +265,26 @@ class Settings_Header extends Tab_Base {
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
-				'name' => 'hello_header_title_typography',
+				'name' => 'bh_header_title_typography',
 				'label' => __( 'Typography', 'bh-daiichi' ),
 				'description' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s title and tagline', 'bh-daiichi' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
 				'condition' => [
-					'hello_header_logo_display' => 'yes',
-					'hello_header_logo_type' => 'title',
+					'bh_header_logo_display' => 'yes',
+					'bh_header_logo_type' => 'title',
 				],
 				'selector' => '.site-header h1.site-title',
 			]
 		);
 
 		$this->add_control(
-			'hello_header_title_link',
+			'bh_header_title_link',
 			[
 				'type' => Controls_Manager::RAW_HTML,
 				'raw' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s title and tagline', 'bh-daiichi' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
 				'content_classes' => 'elementor-control-field-description',
 				'condition' => [
-					'hello_header_logo_display' => 'yes',
-					'hello_header_logo_type' => 'title',
+					'bh_header_logo_display' => 'yes',
+					'bh_header_logo_type' => 'title',
 				],
 			]
 		);
@@ -292,7 +292,7 @@ class Settings_Header extends Tab_Base {
 		$this->end_controls_section();
 
 		$this->start_controls_section(
-			'hello_header_tagline',
+			'bh_header_tagline',
 			[
 				'tab' => 'hello-settings-header',
 				'label' => __( 'Tagline', 'bh-daiichi' ),
@@ -300,7 +300,7 @@ class Settings_Header extends Tab_Base {
 					'relation' => 'and',
 					'terms' => [
 						[
-							'name' => 'hello_header_tagline_display',
+							'name' => 'bh_header_tagline_display',
 							'operator' => '=',
 							'value' => 'yes',
 						],
@@ -310,12 +310,12 @@ class Settings_Header extends Tab_Base {
 		);
 
 		$this->add_control(
-			'hello_header_tagline_color',
+			'bh_header_tagline_color',
 			[
 				'label' => __( 'Text Color', 'bh-daiichi' ),
 				'type' => Controls_Manager::COLOR,
 				'condition' => [
-					'hello_header_tagline_display' => 'yes',
+					'bh_header_tagline_display' => 'yes',
 				],
 				'selectors' => [
 					'.site-header .site-description' => 'color: {{VALUE}};',
@@ -326,17 +326,17 @@ class Settings_Header extends Tab_Base {
 		$this->add_group_control(
 			Group_Control_Typography::get_type(),
 			[
-				'name' => 'hello_header_tagline_typography',
+				'name' => 'bh_header_tagline_typography',
 				'label' => __( 'Typography', 'bh-daiichi' ),
 				'condition' => [
-					'hello_header_tagline_display' => 'yes',
+					'bh_header_tagline_display' => 'yes',
 				],
 				'selector' => '.site-header .site-description',
 			]
 		);
 
 		$this->add_control(
-			'hello_header_tagline_link',
+			'bh_header_tagline_link',
 			[
 				'type' => Controls_Manager::RAW_HTML,
 				'raw' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s title and tagline', 'bh-daiichi' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
@@ -347,7 +347,7 @@ class Settings_Header extends Tab_Base {
 		$this->end_controls_section();
 
 		$this->start_controls_section(
-			'hello_header_menu_tab',
+			'bh_header_menu_tab',
 			[
 				'tab' => 'hello-settings-header',
 				'label' => __( 'Menu', 'bh-daiichi' ),
@@ -355,7 +355,7 @@ class Settings_Header extends Tab_Base {
 					'relation' => 'and',
 					'terms' => [
 						[
-							'name' => 'hello_header_menu_display',
+							'name' => 'bh_header_menu_display',
 							'operator' => '=',
 							'value' => 'yes',
 						],
@@ -373,7 +373,7 @@ class Settings_Header extends Tab_Base {
 
 		if ( 1 === count( $menus ) ) {
 			$this->add_control(
-				'hello_header_menu_notice',
+				'bh_header_menu_notice',
 				[
 					'type' => Controls_Manager::RAW_HTML,
 					'raw' => '<strong>' . __( 'There are no menus in your site.', 'bh-daiichi' ) . '</strong><br>' . sprintf( __( 'Go to <a href="%s" target="_blank">Menus screen</a> to create one.', 'bh-daiichi' ), admin_url( 'nav-menus.php?action=edit&menu=0' ) ),
@@ -383,7 +383,7 @@ class Settings_Header extends Tab_Base {
 			);
 		} else {
 			$this->add_control(
-				'hello_header_menu',
+				'bh_header_menu',
 				[
 					'label' => __( 'Menu', 'bh-daiichi' ),
 					'type' => Controls_Manager::SELECT,
@@ -394,7 +394,7 @@ class Settings_Header extends Tab_Base {
 			);
 
 			$this->add_control(
-				'hello_header_menu_warning',
+				'bh_header_menu_warning',
 				[
 					'type' => Controls_Manager::RAW_HTML,
 					'raw' => __( 'Changes will be reflected in the preview only after the page reloads.', 'bh-daiichi' ),
@@ -403,7 +403,7 @@ class Settings_Header extends Tab_Base {
 			);
 
 			$this->add_control(
-				'hello_header_menu_layout',
+				'bh_header_menu_layout',
 				[
 					'label' => __( 'Menu Layout', 'bh-daiichi' ),
 					'type' => Controls_Manager::SELECT,
@@ -419,7 +419,7 @@ class Settings_Header extends Tab_Base {
 			$breakpoints = Responsive::get_breakpoints();
 
 			$this->add_control(
-				'hello_header_menu_dropdown',
+				'bh_header_menu_dropdown',
 				[
 					'label' => __( 'Breakpoint', 'bh-daiichi' ),
 					'type' => Controls_Manager::SELECT,
@@ -433,18 +433,18 @@ class Settings_Header extends Tab_Base {
 					],
 					'selector' => '.site-header',
 					'condition' => [
-						'hello_header_menu_layout!' => 'dropdown',
+						'bh_header_menu_layout!' => 'dropdown',
 					],
 				]
 			);
 
 			$this->add_control(
-				'hello_header_menu_color',
+				'bh_header_menu_color',
 				[
 					'label' => __( 'Color', 'bh-daiichi' ),
 					'type' => Controls_Manager::COLOR,
 					'condition' => [
-						'hello_header_menu_display' => 'yes',
+						'bh_header_menu_display' => 'yes',
 					],
 					'selectors' => [
 						'.site-header .site-navigation ul.menu li a' => 'color: {{VALUE}};',
@@ -453,12 +453,12 @@ class Settings_Header extends Tab_Base {
 			);
 
 			$this->add_control(
-				'hello_header_menu_toggle_color',
+				'bh_header_menu_toggle_color',
 				[
 					'label' => __( 'Toggle Color', 'bh-daiichi' ),
 					'type' => Controls_Manager::COLOR,
 					'condition' => [
-						'hello_header_menu_display' => 'yes',
+						'bh_header_menu_display' => 'yes',
 					],
 					'selectors' => [
 						'.site-header .site-navigation-toggle i' => 'color: {{VALUE}};',
@@ -469,10 +469,10 @@ class Settings_Header extends Tab_Base {
 			$this->add_group_control(
 				Group_Control_Typography::get_type(),
 				[
-					'name' => 'hello_header_menu_typography',
+					'name' => 'bh_header_menu_typography',
 					'label' => __( 'Typography', 'bh-daiichi' ),
 					'condition' => [
-						'hello_header_menu_display' => 'yes',
+						'bh_header_menu_display' => 'yes',
 					],
 					'selector' => '.site-header .site-navigation .menu li',
 				]
@@ -484,8 +484,8 @@ class Settings_Header extends Tab_Base {
 
 	public function on_save( $data ) {
 		// Save chosen header menu to the WP settings.
-		if ( isset( $data['settings']['hello_header_menu'] ) ) {
-			$menu_id = $data['settings']['hello_header_menu'];
+		if ( isset( $data['settings']['bh_header_menu'] ) ) {
+			$menu_id = $data['settings']['bh_header_menu'];
 			$locations = get_theme_mod( 'nav_menu_locations' );
 			$locations['menu-1'] = (int) $menu_id;
 			set_theme_mod( 'nav_menu_locations', $locations );
