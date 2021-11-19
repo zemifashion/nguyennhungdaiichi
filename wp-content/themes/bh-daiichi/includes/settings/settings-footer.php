@@ -1,6 +1,6 @@
 <?php
 
-namespace HelloElementor\Includes\Settings;
+namespace BHDaiichi\Includes\Settings;
 
 use Elementor\Controls_Manager;
 use Elementor\Group_Control_Background;
@@ -482,7 +482,7 @@ class Settings_Footer extends Tab_Base {
 						<p class="elementor-panel-heading-title elementor-nerd-box-title">%1$s</p>
 						<p>%2$s</p>
 					</div>
-					<a class="elementor-button elementor-button-default elementor-nerd-box-link" target="_blank" href="https://elementor.com/pro/?utm_source=panel-widgets&amp;utm_campaign=gopro&amp;utm_medium=wp-dash&amp;utm_term=helloelementor">%3$s</a>
+					<a class="elementor-button elementor-button-default elementor-nerd-box-link" target="_blank" href="https://elementor.com/pro/?utm_source=panel-widgets&amp;utm_campaign=gopro&amp;utm_medium=wp-dash&amp;utm_term=bhdaiichi">%3$s</a>
 				</div>
 				',
 				__( 'Create a custom footer with multiple options', 'bh-daiichi' ),

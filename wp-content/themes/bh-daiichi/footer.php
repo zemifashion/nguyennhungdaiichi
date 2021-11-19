@@ -4,7 +4,7 @@
  *
  * Contains the body & html closing tags.
  *
- * @package HelloElementor
+ * @package BHDaiichi
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive pages.
  *
- * @package HelloElementor
+ * @package BHDaiichi
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

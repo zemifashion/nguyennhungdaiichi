@@ -2,7 +2,7 @@
 /**
  * The template for displaying header.
  *
- * @package HelloElementor
+ * @package BHDaiichi
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

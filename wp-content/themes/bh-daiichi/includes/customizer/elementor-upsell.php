@@ -1,6 +1,6 @@
 <?php
 
-namespace HelloElementor\Includes\Customizer;
+namespace BHDaiichi\Includes\Customizer;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.

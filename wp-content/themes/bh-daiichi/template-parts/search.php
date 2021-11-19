@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results.
  *
- * @package HelloElementor
+ * @package BHDaiichi
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

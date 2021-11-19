@@ -16,8 +16,8 @@ function bh_daiichi_settings_init() {
 		require 'settings/settings-footer.php';
 
 		add_action( 'elementor/kit/register_tabs', function( \Elementor\Core\Kits\Documents\Kit $kit ) {
-			$kit->register_tab( 'hello-settings-header', HelloElementor\Includes\Settings\Settings_Header::class );
-			$kit->register_tab( 'hello-settings-footer', HelloElementor\Includes\Settings\Settings_Footer::class );
+			$kit->register_tab( 'hello-settings-header', BHDaiichi\Includes\Settings\Settings_Header::class );
+			$kit->register_tab( 'hello-settings-footer', BHDaiichi\Includes\Settings\Settings_Footer::class );
 		}, 1, 40 );
 	}
 }

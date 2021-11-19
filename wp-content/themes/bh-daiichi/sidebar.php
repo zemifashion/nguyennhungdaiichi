@@ -2,7 +2,7 @@
 /**
  * The template for displaying sidebar.
  *
- * @package HelloElementor
+ * @package BHDaiichi
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

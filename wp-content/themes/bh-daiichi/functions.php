@@ -2,7 +2,7 @@
 /**
  * Theme functions and definitions
  *
- * @package HelloElementor
+ * @package BHDaiichi
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

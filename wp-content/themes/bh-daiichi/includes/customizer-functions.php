@@ -30,7 +30,7 @@ function hello_customizer_register( $wp_customize ) {
 	);
 
 	$wp_customize->add_control(
-		new HelloElementor\Includes\Customizer\Elementor_Upsell(
+		new BHDaiichi\Includes\Customizer\Elementor_Upsell(
 			$wp_customize,
 			'bh-daiichi-header-footer',
 			[

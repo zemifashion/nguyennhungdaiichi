@@ -2,7 +2,7 @@
 /**
  * The template for displaying footer.
  *
- * @package HelloElementor
+ * @package BHDaiichi
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
