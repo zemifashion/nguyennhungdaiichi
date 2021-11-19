@@ -8,9 +8,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Register Site Settings Controls.
  */
 
-add_action( 'elementor/init', 'hello_elementor_settings_init' );
+add_action( 'elementor/init', 'bh_daiichi_settings_init' );
 
-function hello_elementor_settings_init() {
+function bh_daiichi_settings_init() {
 	if ( hello_header_footer_experiment_active() ) {
 		require 'settings/settings-header.php';
 		require 'settings/settings-footer.php';
@@ -30,21 +30,21 @@ function hello_elementor_settings_init() {
  * @param  string $setting_id
  * @return string|array same as the Elementor internal function does.
  */
-function hello_elementor_get_setting( $setting_id ) {
-	global $hello_elementor_settings;
+function bh_daiichi_get_setting( $setting_id ) {
+	global $bh_daiichi_settings;
 
 	$return = '';
 
-	if ( ! isset( $hello_elementor_settings['kit_settings'] ) ) {
+	if ( ! isset( $bh_daiichi_settings['kit_settings'] ) ) {
 		$kit = \Elementor\Plugin::$instance->documents->get( \Elementor\Plugin::$instance->kits_manager->get_active_id(), false );
-		$hello_elementor_settings['kit_settings'] = $kit->get_settings();
+		$bh_daiichi_settings['kit_settings'] = $kit->get_settings();
 	}
 
-	if ( isset( $hello_elementor_settings['kit_settings'][ $setting_id ] ) ) {
-		$return = $hello_elementor_settings['kit_settings'][ $setting_id ];
+	if ( isset( $bh_daiichi_settings['kit_settings'][ $setting_id ] ) ) {
+		$return = $bh_daiichi_settings['kit_settings'][ $setting_id ];
 	}
 
-	return apply_filters( 'hello_elementor_' . $setting_id, $return );
+	return apply_filters( 'bh_daiichi_' . $setting_id, $return );
 }
 
 /**
@@ -56,7 +56,7 @@ function hello_elementor_get_setting( $setting_id ) {
  * @return string|array same as the Elementor internal function does.
  */
 function hello_show_or_hide( $setting_id ) {
-	return ( 'yes' === hello_elementor_get_setting( $setting_id ) ? 'show' : 'hide' );
+	return ( 'yes' === bh_daiichi_get_setting( $setting_id ) ? 'show' : 'hide' );
 }
 
 /**
@@ -67,19 +67,19 @@ function hello_show_or_hide( $setting_id ) {
 function hello_get_header_layout_class() {
 	$layout_classes = [];
 
-	$header_layout = hello_elementor_get_setting( 'hello_header_layout' );
+	$header_layout = bh_daiichi_get_setting( 'hello_header_layout' );
 	if ( 'inverted' === $header_layout ) {
 		$layout_classes[] = 'header-inverted';
 	} elseif ( 'stacked' === $header_layout ) {
 		$layout_classes[] = 'header-stacked';
 	}
 
-	$header_width = hello_elementor_get_setting( 'hello_header_width' );
+	$header_width = bh_daiichi_get_setting( 'hello_header_width' );
 	if ( 'full-width' === $header_width ) {
 		$layout_classes[] = 'header-full-width';
 	}
 
-	$header_menu_dropdown = hello_elementor_get_setting( 'hello_header_menu_dropdown' );
+	$header_menu_dropdown = bh_daiichi_get_setting( 'hello_header_menu_dropdown' );
 	if ( 'tablet' === $header_menu_dropdown ) {
 		$layout_classes[] = 'menu-dropdown-tablet';
 	} elseif ( 'mobile' === $header_menu_dropdown ) {
@@ -88,7 +88,7 @@ function hello_get_header_layout_class() {
 		$layout_classes[] = 'menu-dropdown-none';
 	}
 
-	$hello_header_menu_layout = hello_elementor_get_setting( 'hello_header_menu_layout' );
+	$hello_header_menu_layout = bh_daiichi_get_setting( 'hello_header_menu_layout' );
 	if ( 'dropdown' === $hello_header_menu_layout ) {
 		$layout_classes[] = 'menu-layout-dropdown';
 	}
@@ -102,7 +102,7 @@ function hello_get_header_layout_class() {
  * @return string
  */
 function hello_get_footer_layout_class() {
-	$footer_layout = hello_elementor_get_setting( 'hello_footer_layout' );
+	$footer_layout = bh_daiichi_get_setting( 'hello_footer_layout' );
 
 	$layout_classes = [];
 
@@ -112,13 +112,13 @@ function hello_get_footer_layout_class() {
 		$layout_classes[] = 'footer-stacked';
 	}
 
-	$footer_width = hello_elementor_get_setting( 'hello_footer_width' );
+	$footer_width = bh_daiichi_get_setting( 'hello_footer_width' );
 
 	if ( 'full-width' === $footer_width ) {
 		$layout_classes[] = 'footer-full-width';
 	}
 
-	if ( hello_elementor_get_setting( 'hello_footer_copyright_display' ) && '' !== hello_elementor_get_setting( 'hello_footer_copyright_text' ) ) {
+	if ( bh_daiichi_get_setting( 'hello_footer_copyright_display' ) && '' !== bh_daiichi_get_setting( 'hello_footer_copyright_text' ) ) {
 		$layout_classes[] = 'footer-has-copyright';
 	}
 
@@ -133,7 +133,7 @@ add_action( 'elementor/editor/after_enqueue_scripts', function() {
 			'hello-theme-editor',
 			get_template_directory_uri() . '/assets/js/hello-editor' . $suffix . '.js',
 			[ 'jquery', 'elementor-editor' ],
-			HELLO_ELEMENTOR_VERSION,
+			bh_daiichi_VERSION,
 			true
 		);
 
@@ -141,7 +141,7 @@ add_action( 'elementor/editor/after_enqueue_scripts', function() {
 			'hello-editor',
 			get_template_directory_uri() . '/editor' . $suffix . '.css',
 			[],
-			HELLO_ELEMENTOR_VERSION
+			bh_daiichi_VERSION
 		);
 	}
 } );
@@ -175,9 +175,9 @@ function hello_get_header_display() {
 
 	return (
 		$is_editor
-		|| hello_elementor_get_setting( 'hello_header_logo_display' )
-		|| hello_elementor_get_setting( 'hello_header_tagline_display' )
-		|| hello_elementor_get_setting( 'hello_header_menu_display' )
+		|| bh_daiichi_get_setting( 'hello_header_logo_display' )
+		|| bh_daiichi_get_setting( 'hello_header_tagline_display' )
+		|| bh_daiichi_get_setting( 'hello_header_menu_display' )
 	);
 }
 
@@ -191,10 +191,10 @@ function hello_get_footer_display() {
 
 	return (
 		$is_editor
-		|| hello_elementor_get_setting( 'hello_footer_logo_display' )
-		|| hello_elementor_get_setting( 'hello_footer_tagline_display' )
-		|| hello_elementor_get_setting( 'hello_footer_menu_display' )
-		|| hello_elementor_get_setting( 'hello_footer_copyright_display' )
+		|| bh_daiichi_get_setting( 'hello_footer_logo_display' )
+		|| bh_daiichi_get_setting( 'hello_footer_tagline_display' )
+		|| bh_daiichi_get_setting( 'hello_footer_menu_display' )
+		|| bh_daiichi_get_setting( 'hello_footer_copyright_display' )
 	);
 }
 

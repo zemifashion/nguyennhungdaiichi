@@ -24,14 +24,14 @@ $header_nav_menu = wp_nav_menu( [
 ?>
 <header id="site-header" class="site-header dynamic-header <?php echo esc_attr( hello_get_header_layout_class() ); ?>" role="banner">
 	<div class="header-inner">
-		<div class="site-branding show-<?php echo hello_elementor_get_setting( 'hello_header_logo_type' ); ?>">
-			<?php if ( has_custom_logo() && ( 'title' !== hello_elementor_get_setting( 'hello_header_logo_type' ) || $is_editor ) ) : ?>
+		<div class="site-branding show-<?php echo bh_daiichi_get_setting( 'hello_header_logo_type' ); ?>">
+			<?php if ( has_custom_logo() && ( 'title' !== bh_daiichi_get_setting( 'hello_header_logo_type' ) || $is_editor ) ) : ?>
 				<div class="site-logo <?php echo hello_show_or_hide( 'hello_header_logo_display' ); ?>">
 					<?php the_custom_logo(); ?>
 				</div>
 			<?php endif;
 
-			if ( $site_name && ( 'logo' !== hello_elementor_get_setting( 'hello_header_logo_type' ) || $is_editor ) ) : ?>
+			if ( $site_name && ( 'logo' !== bh_daiichi_get_setting( 'hello_header_logo_type' ) || $is_editor ) ) : ?>
 				<h1 class="site-title <?php echo hello_show_or_hide( 'hello_header_logo_display' ); ?>">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( 'Home', 'hello-elementor' ); ?>" rel="home">
 						<?php echo esc_html( $site_name ); ?>
@@ -39,7 +39,7 @@ $header_nav_menu = wp_nav_menu( [
 				</h1>
 			<?php endif;
 
-			if ( $tagline && ( hello_elementor_get_setting( 'hello_header_tagline_display' ) || $is_editor ) ) : ?>
+			if ( $tagline && ( bh_daiichi_get_setting( 'hello_header_tagline_display' ) || $is_editor ) ) : ?>
 				<p class="site-description <?php echo hello_show_or_hide( 'hello_header_tagline_display' ); ?> ">
 					<?php echo esc_html( $tagline ); ?>
 				</p>

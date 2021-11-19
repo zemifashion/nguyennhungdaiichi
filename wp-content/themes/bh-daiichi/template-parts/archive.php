@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <main class="site-main" role="main">
 
-	<?php if ( apply_filters( 'hello_elementor_page_title', true ) ) : ?>
+	<?php if ( apply_filters( 'bh_daiichi_page_title', true ) ) : ?>
 		<header class="page-header">
 			<?php
 			the_archive_title( '<h1 class="entry-title">', '</h1>' );

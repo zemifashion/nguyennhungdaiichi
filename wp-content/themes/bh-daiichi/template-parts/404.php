@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <main class="site-main" role="main">
-	<?php if ( apply_filters( 'hello_elementor_page_title', true ) ) : ?>
+	<?php if ( apply_filters( 'bh_daiichi_page_title', true ) ) : ?>
 		<header class="page-header">
 			<h1 class="entry-title"><?php esc_html_e( 'The page can&rsquo;t be found.', 'hello-elementor' ); ?></h1>
 		</header>

@@ -9,7 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @return void
  */
-function hello_elementor_fail_load_admin_notice() {
+function bh_daiichi_fail_load_admin_notice() {
 	// Leave to Elementor Pro to manage this.
 	if ( function_exists( 'elementor_pro_load_plugin' ) ) {
 		return;
@@ -20,7 +20,7 @@ function hello_elementor_fail_load_admin_notice() {
 		return;
 	}
 
-	if ( 'true' === get_user_meta( get_current_user_id(), '_hello_elementor_install_notice', true ) ) {
+	if ( 'true' === get_user_meta( get_current_user_id(), '_bh_daiichi_install_notice', true ) ) {
 		return;
 	}
 
@@ -127,7 +127,7 @@ function hello_elementor_fail_load_admin_notice() {
 				event.preventDefault();
 
 				$.post( ajaxurl, {
-					action: 'hello_elementor_set_admin_notice_viewed'
+					action: 'bh_daiichi_set_admin_notice_viewed'
 				} );
 			} );
 		} );</script>
@@ -154,12 +154,12 @@ function hello_elementor_fail_load_admin_notice() {
  *
  * @return void
  */
-function ajax_hello_elementor_set_admin_notice_viewed() {
-	update_user_meta( get_current_user_id(), '_hello_elementor_install_notice', 'true' );
+function ajax_bh_daiichi_set_admin_notice_viewed() {
+	update_user_meta( get_current_user_id(), '_bh_daiichi_install_notice', 'true' );
 	die;
 }
 
-add_action( 'wp_ajax_hello_elementor_set_admin_notice_viewed', 'ajax_hello_elementor_set_admin_notice_viewed' );
+add_action( 'wp_ajax_bh_daiichi_set_admin_notice_viewed', 'ajax_bh_daiichi_set_admin_notice_viewed' );
 if ( ! did_action( 'elementor/loaded' ) ) {
-	add_action( 'admin_notices', 'hello_elementor_fail_load_admin_notice' );
+	add_action( 'admin_notices', 'bh_daiichi_fail_load_admin_notice' );
 }

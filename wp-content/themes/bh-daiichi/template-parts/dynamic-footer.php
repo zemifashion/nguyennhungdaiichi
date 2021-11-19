@@ -21,14 +21,14 @@ $footer_nav_menu = wp_nav_menu( [
 ?>
 <footer id="site-footer" class="site-footer dynamic-footer <?php echo $footer_class; ?>" role="contentinfo">
 	<div class="footer-inner">
-		<div class="site-branding show-<?php echo hello_elementor_get_setting( 'hello_footer_logo_type' ); ?>">
-			<?php if ( has_custom_logo() && ( 'title' !== hello_elementor_get_setting( 'hello_footer_logo_type' ) || $is_editor ) ) : ?>
+		<div class="site-branding show-<?php echo bh_daiichi_get_setting( 'hello_footer_logo_type' ); ?>">
+			<?php if ( has_custom_logo() && ( 'title' !== bh_daiichi_get_setting( 'hello_footer_logo_type' ) || $is_editor ) ) : ?>
 				<div class="site-logo <?php echo hello_show_or_hide( 'hello_footer_logo_display' ); ?>">
 					<?php the_custom_logo(); ?>
 				</div>
 			<?php endif;
 
-			if ( $site_name && ( 'logo' !== hello_elementor_get_setting( 'hello_footer_logo_type' ) ) || $is_editor ) : ?>
+			if ( $site_name && ( 'logo' !== bh_daiichi_get_setting( 'hello_footer_logo_type' ) ) || $is_editor ) : ?>
 				<h4 class="site-title <?php echo hello_show_or_hide( 'hello_footer_logo_display' ); ?>">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( 'Home', 'hello-elementor' ); ?>" rel="home">
 						<?php echo esc_html( $site_name ); ?>
@@ -49,9 +49,9 @@ $footer_nav_menu = wp_nav_menu( [
 			</nav>
 		<?php endif; ?>
 
-		<?php if ( '' !== hello_elementor_get_setting( 'hello_footer_copyright_text' ) || $is_editor ) : ?>
+		<?php if ( '' !== bh_daiichi_get_setting( 'hello_footer_copyright_text' ) || $is_editor ) : ?>
 			<div class="copyright <?php echo hello_show_or_hide( 'hello_footer_copyright_display' ); ?>">
-				<p><?php echo hello_elementor_get_setting( 'hello_footer_copyright_text' ); ?></p>
+				<p><?php echo bh_daiichi_get_setting( 'hello_footer_copyright_text' ); ?></p>
 			</div>
 		<?php endif; ?>
 	</div>
