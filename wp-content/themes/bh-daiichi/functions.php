@@ -28,13 +28,13 @@ if ( ! function_exists( 'bh_daiichi_setup' ) ) {
 
 		$hook_result = apply_filters_deprecated( 'elementor_hello_theme_load_textdomain', [ true ], '2.0', 'bh_daiichi_load_textdomain' );
 		if ( apply_filters( 'bh_daiichi_load_textdomain', $hook_result ) ) {
-			load_theme_textdomain( 'hello-elementor', get_template_directory() . '/languages' );
+			load_theme_textdomain( 'bh-daiichi', get_template_directory() . '/languages' );
 		}
 
 		$hook_result = apply_filters_deprecated( 'elementor_hello_theme_register_menus', [ true ], '2.0', 'bh_daiichi_register_menus' );
 		if ( apply_filters( 'bh_daiichi_register_menus', $hook_result ) ) {
-			register_nav_menus( [ 'menu-1' => __( 'Header', 'hello-elementor' ) ] );
-			register_nav_menus( [ 'menu-2' => __( 'Footer', 'hello-elementor' ) ] );
+			register_nav_menus( [ 'menu-1' => __( 'Header', 'bh-daiichi' ) ] );
+			register_nav_menus( [ 'menu-2' => __( 'Footer', 'bh-daiichi' ) ] );
 		}
 
 		$hook_result = apply_filters_deprecated( 'elementor_hello_theme_add_theme_support', [ true ], '2.0', 'bh_daiichi_add_theme_support' );
@@ -115,7 +115,7 @@ if ( ! function_exists( 'bh_daiichi_scripts_styles' ) ) {
 
 		if ( apply_filters( 'bh_daiichi_enqueue_style', $enqueue_basic_style ) ) {
 			wp_enqueue_style(
-				'hello-elementor',
+				'bh-daiichi',
 				get_template_directory_uri() . '/style' . $min_suffix . '.css',
 				[],
                 BH_DAIICHI_VERSION
@@ -124,7 +124,7 @@ if ( ! function_exists( 'bh_daiichi_scripts_styles' ) ) {
 
 		if ( apply_filters( 'bh_daiichi_enqueue_theme_style', true ) ) {
 			wp_enqueue_style(
-				'hello-elementor-theme-style',
+				'bh-daiichi-theme-style',
 				get_template_directory_uri() . '/theme' . $min_suffix . '.css',
 				[],
                 BH_DAIICHI_VERSION

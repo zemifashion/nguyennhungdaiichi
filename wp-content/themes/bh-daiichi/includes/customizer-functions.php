@@ -16,13 +16,13 @@ function hello_customizer_register( $wp_customize ) {
 	$wp_customize->add_section(
 		'hello_theme_options',
 		[
-			'title' => __( 'Header &amp; Footer', 'hello-elementor' ),
+			'title' => __( 'Header &amp; Footer', 'bh-daiichi' ),
 			'capability' => 'edit_theme_options',
 		]
 	);
 
 	$wp_customize->add_setting(
-		'hello-elementor-header-footer',
+		'bh-daiichi-header-footer',
 		[
 			'sanitize_callback' => false,
 			'transport' => 'refresh',
@@ -32,7 +32,7 @@ function hello_customizer_register( $wp_customize ) {
 	$wp_customize->add_control(
 		new HelloElementor\Includes\Customizer\Elementor_Upsell(
 			$wp_customize,
-			'hello-elementor-header-footer',
+			'bh-daiichi-header-footer',
 			[
 				'section' => 'hello_theme_options',
 				'priority' => 20,
@@ -53,7 +53,7 @@ function hello_customizer_print_styles() {
 	$min_suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
 	wp_enqueue_style(
-		'hello-elementor-customizer',
+		'bh-daiichi-customizer',
 		get_template_directory_uri() . '/customizer' . $min_suffix . '.css',
 		[],
 		BH_DAIICHI_VERSION

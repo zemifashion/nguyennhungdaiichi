@@ -12,11 +12,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 <main class="site-main" role="main">
 	<?php if ( apply_filters( 'bh_daiichi_page_title', true ) ) : ?>
 		<header class="page-header">
-			<h1 class="entry-title"><?php esc_html_e( 'The page can&rsquo;t be found.', 'hello-elementor' ); ?></h1>
+			<h1 class="entry-title"><?php esc_html_e( 'The page can&rsquo;t be found.', 'bh-daiichi' ); ?></h1>
 		</header>
 	<?php endif; ?>
 	<div class="page-content">
-		<p><?php esc_html_e( 'It looks like nothing was found at this location.', 'hello-elementor' ); ?></p>
+		<p><?php esc_html_e( 'It looks like nothing was found at this location.', 'bh-daiichi' ); ?></p>
 	</div>
 
 </main>

@@ -18,7 +18,7 @@ class Settings_Footer extends Tab_Base {
 	}
 
 	public function get_title() {
-		return __( 'Footer', 'hello-elementor' );
+		return __( 'Footer', 'bh-daiichi' );
 	}
 
 	public function get_icon() {
@@ -39,7 +39,7 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_section',
 			[
 				'tab' => 'hello-settings-footer',
-				'label' => __( 'Footer', 'hello-elementor' ),
+				'label' => __( 'Footer', 'bh-daiichi' ),
 			]
 		);
 
@@ -47,10 +47,10 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_logo_display',
 			[
 				'type' => Controls_Manager::SWITCHER,
-				'label' => __( 'Site Logo', 'hello-elementor' ),
+				'label' => __( 'Site Logo', 'bh-daiichi' ),
 				'default' => 'yes',
-				'label_on' => __( 'Show', 'hello-elementor' ),
-				'label_off' => __( 'Hide', 'hello-elementor' ),
+				'label_on' => __( 'Show', 'bh-daiichi' ),
+				'label_off' => __( 'Hide', 'bh-daiichi' ),
 				'selector' => '.site-footer .site-branding',
 			]
 		);
@@ -59,10 +59,10 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_tagline_display',
 			[
 				'type' => Controls_Manager::SWITCHER,
-				'label' => __( 'Tagline', 'hello-elementor' ),
+				'label' => __( 'Tagline', 'bh-daiichi' ),
 				'default' => 'yes',
-				'label_on' => __( 'Show', 'hello-elementor' ),
-				'label_off' => __( 'Hide', 'hello-elementor' ),
+				'label_on' => __( 'Show', 'bh-daiichi' ),
+				'label_off' => __( 'Hide', 'bh-daiichi' ),
 				'selector' => '.site-footer .site-description',
 			]
 		);
@@ -71,10 +71,10 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_menu_display',
 			[
 				'type' => Controls_Manager::SWITCHER,
-				'label' => __( 'Menu', 'hello-elementor' ),
+				'label' => __( 'Menu', 'bh-daiichi' ),
 				'default' => 'yes',
-				'label_on' => __( 'Show', 'hello-elementor' ),
-				'label_off' => __( 'Hide', 'hello-elementor' ),
+				'label_on' => __( 'Show', 'bh-daiichi' ),
+				'label_off' => __( 'Hide', 'bh-daiichi' ),
 				'selector' => '.site-footer .site-navigation',
 			]
 		);
@@ -83,10 +83,10 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_copyright_display',
 			[
 				'type' => Controls_Manager::SWITCHER,
-				'label' => __( 'Copyright', 'hello-elementor' ),
+				'label' => __( 'Copyright', 'bh-daiichi' ),
 				'default' => 'yes',
-				'label_on' => __( 'Show', 'hello-elementor' ),
-				'label_off' => __( 'Hide', 'hello-elementor' ),
+				'label_on' => __( 'Show', 'bh-daiichi' ),
+				'label_off' => __( 'Hide', 'bh-daiichi' ),
 				'selector' => '.site-footer .copyright',
 			]
 		);
@@ -95,11 +95,11 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_layout',
 			[
 				'type' => Controls_Manager::SELECT,
-				'label' => __( 'Layout', 'hello-elementor' ),
+				'label' => __( 'Layout', 'bh-daiichi' ),
 				'options' => [
-					'default' => __( 'Default', 'hello-elementor' ),
-					'inverted' => __( 'Inverted', 'hello-elementor' ),
-					'stacked' => __( 'Centered', 'hello-elementor' ),
+					'default' => __( 'Default', 'bh-daiichi' ),
+					'inverted' => __( 'Inverted', 'bh-daiichi' ),
+					'stacked' => __( 'Centered', 'bh-daiichi' ),
 				],
 				'selector' => '.site-footer',
 				'default' => 'default',
@@ -110,10 +110,10 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_width',
 			[
 				'type' => Controls_Manager::SELECT,
-				'label' => __( 'Width', 'hello-elementor' ),
+				'label' => __( 'Width', 'bh-daiichi' ),
 				'options' => [
-					'boxed' => __( 'Boxed', 'hello-elementor' ),
-					'full-width' => __( 'Full Width', 'hello-elementor' ),
+					'boxed' => __( 'Boxed', 'bh-daiichi' ),
+					'full-width' => __( 'Full Width', 'bh-daiichi' ),
 				],
 				'selector' => '.site-footer',
 				'default' => 'boxed',
@@ -124,7 +124,7 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_custom_width',
 			[
 				'type' => Controls_Manager::SLIDER,
-				'label' => __( 'Content Width', 'hello-elementor' ),
+				'label' => __( 'Content Width', 'bh-daiichi' ),
 				'size_units' => [
 					'%',
 					'px',
@@ -152,7 +152,7 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_gap',
 			[
 				'type' => Controls_Manager::SLIDER,
-				'label' => __( 'Gap', 'hello-elementor' ),
+				'label' => __( 'Gap', 'bh-daiichi' ),
 				'size_units' => [
 					'%',
 					'px',
@@ -180,7 +180,7 @@ class Settings_Footer extends Tab_Base {
 			Group_Control_Background::get_type(),
 			[
 				'name' => 'hello_footer_background',
-				'label' => __( 'Background', 'hello-elementor' ),
+				'label' => __( 'Background', 'bh-daiichi' ),
 				'types' => [ 'classic', 'gradient' ],
 				'selector' => '.site-footer',
 			]
@@ -192,7 +192,7 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_logo_section',
 			[
 				'tab' => 'hello-settings-footer',
-				'label' => __( 'Site Logo', 'hello-elementor' ),
+				'label' => __( 'Site Logo', 'bh-daiichi' ),
 				'condition' => [
 					'hello_footer_logo_display!' => '',
 				],
@@ -202,12 +202,12 @@ class Settings_Footer extends Tab_Base {
 		$this->add_control(
 			'hello_footer_logo_type',
 			[
-				'label' => __( 'Type', 'hello-elementor' ),
+				'label' => __( 'Type', 'bh-daiichi' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'logo',
 				'options' => [
-					'logo' => __( 'Logo', 'hello-elementor' ),
-					'title' => __( 'Title', 'hello-elementor' ),
+					'logo' => __( 'Logo', 'bh-daiichi' ),
+					'title' => __( 'Title', 'bh-daiichi' ),
 				],
 				'frontend_available' => true,
 			]
@@ -217,8 +217,8 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_logo_width',
 			[
 				'type' => Controls_Manager::SLIDER,
-				'label' => __( 'Logo Width', 'hello-elementor' ),
-				'description' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s logo', 'hello-elementor' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
+				'label' => __( 'Logo Width', 'bh-daiichi' ),
+				'description' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s logo', 'bh-daiichi' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
 				'size_units' => [
 					'%',
 					'px',
@@ -247,7 +247,7 @@ class Settings_Footer extends Tab_Base {
 		$this->add_control(
 			'hello_footer_title_color',
 			[
-				'label' => __( 'Text Color', 'hello-elementor' ),
+				'label' => __( 'Text Color', 'bh-daiichi' ),
 				'type' => Controls_Manager::COLOR,
 				'condition' => [
 					'hello_footer_logo_display' => 'yes',
@@ -263,7 +263,7 @@ class Settings_Footer extends Tab_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'hello_footer_title_typography',
-				'label' => __( 'Typography', 'hello-elementor' ),
+				'label' => __( 'Typography', 'bh-daiichi' ),
 				'condition' => [
 					'hello_footer_logo_display' => 'yes',
 					'hello_footer_logo_type' => 'title',
@@ -277,7 +277,7 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_title_link',
 			[
 				'type' => Controls_Manager::RAW_HTML,
-				'raw' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s title and tagline', 'hello-elementor' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
+				'raw' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s title and tagline', 'bh-daiichi' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
 				'content_classes' => 'elementor-control-field-description',
 				'condition' => [
 					'hello_footer_logo_display' => 'yes',
@@ -292,7 +292,7 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_tagline',
 			[
 				'tab' => 'hello-settings-footer',
-				'label' => __( 'Tagline', 'hello-elementor' ),
+				'label' => __( 'Tagline', 'bh-daiichi' ),
 				'condition' => [
 					'hello_footer_tagline_display' => 'yes',
 				],
@@ -302,7 +302,7 @@ class Settings_Footer extends Tab_Base {
 		$this->add_control(
 			'hello_footer_tagline_color',
 			[
-				'label' => __( 'Text Color', 'hello-elementor' ),
+				'label' => __( 'Text Color', 'bh-daiichi' ),
 				'type' => Controls_Manager::COLOR,
 				'condition' => [
 					'hello_footer_tagline_display' => 'yes',
@@ -317,7 +317,7 @@ class Settings_Footer extends Tab_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'hello_footer_tagline_typography',
-				'label' => __( 'Typography', 'hello-elementor' ),
+				'label' => __( 'Typography', 'bh-daiichi' ),
 				'condition' => [
 					'hello_footer_tagline_display' => 'yes',
 				],
@@ -329,7 +329,7 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_tagline_link',
 			[
 				'type' => Controls_Manager::RAW_HTML,
-				'raw' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s title and tagline', 'hello-elementor' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
+				'raw' => sprintf( __( 'Go to <a href="%s">Site Identity</a> to manage your site\'s title and tagline', 'bh-daiichi' ), wp_nonce_url( 'customize.php?autofocus[section]=title_tagline' ) ),
 				'content_classes' => 'elementor-control-field-description',
 			]
 		);
@@ -340,7 +340,7 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_menu_tab',
 			[
 				'tab' => 'hello-settings-footer',
-				'label' => __( 'Menu', 'hello-elementor' ),
+				'label' => __( 'Menu', 'bh-daiichi' ),
 				'condition' => [
 					'hello_footer_menu_display' => 'yes',
 				],
@@ -349,7 +349,7 @@ class Settings_Footer extends Tab_Base {
 
 		$available_menus = wp_get_nav_menus();
 
-		$menus = [ '0' => __( '— Select a Menu —', 'hello-elementor' ) ];
+		$menus = [ '0' => __( '— Select a Menu —', 'bh-daiichi' ) ];
 		foreach ( $available_menus as $available_menu ) {
 			$menus[ $available_menu->term_id ] = $available_menu->name;
 		}
@@ -359,7 +359,7 @@ class Settings_Footer extends Tab_Base {
 				'hello_footer_menu_notice',
 				[
 					'type' => Controls_Manager::RAW_HTML,
-					'raw' => '<strong>' . __( 'There are no menus in your site.', 'hello-elementor' ) . '</strong><br>' . sprintf( __( 'Go to <a href="%s" target="_blank">Menus screen</a> to create one.', 'hello-elementor' ), admin_url( 'nav-menus.php?action=edit&menu=0' ) ),
+					'raw' => '<strong>' . __( 'There are no menus in your site.', 'bh-daiichi' ) . '</strong><br>' . sprintf( __( 'Go to <a href="%s" target="_blank">Menus screen</a> to create one.', 'bh-daiichi' ), admin_url( 'nav-menus.php?action=edit&menu=0' ) ),
 					'separator' => 'after',
 					'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
 				]
@@ -368,11 +368,11 @@ class Settings_Footer extends Tab_Base {
 			$this->add_control(
 				'hello_footer_menu',
 				[
-					'label' => __( 'Menu', 'hello-elementor' ),
+					'label' => __( 'Menu', 'bh-daiichi' ),
 					'type' => Controls_Manager::SELECT,
 					'options' => $menus,
 					'default' => array_keys( $menus )[0],
-					'description' => sprintf( __( 'Go to the <a href="%s" target="_blank">Menus screen</a> to manage your menus.', 'hello-elementor' ), admin_url( 'nav-menus.php' ) ),
+					'description' => sprintf( __( 'Go to the <a href="%s" target="_blank">Menus screen</a> to manage your menus.', 'bh-daiichi' ), admin_url( 'nav-menus.php' ) ),
 				]
 			);
 
@@ -380,7 +380,7 @@ class Settings_Footer extends Tab_Base {
 				'hello_footer_menu_warning',
 				[
 					'type' => Controls_Manager::RAW_HTML,
-					'raw' => __( 'Changes will be reflected in the preview only after the page reloads.', 'hello-elementor' ),
+					'raw' => __( 'Changes will be reflected in the preview only after the page reloads.', 'bh-daiichi' ),
 					'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
 				]
 			);
@@ -388,7 +388,7 @@ class Settings_Footer extends Tab_Base {
 			$this->add_control(
 				'hello_footer_menu_color',
 				[
-					'label' => __( 'Color', 'hello-elementor' ),
+					'label' => __( 'Color', 'bh-daiichi' ),
 					'type' => Controls_Manager::COLOR,
 					'selectors' => [
 						'footer .footer-inner .site-navigation a' => 'color: {{VALUE}};',
@@ -400,7 +400,7 @@ class Settings_Footer extends Tab_Base {
 				Group_Control_Typography::get_type(),
 				[
 					'name' => 'hello_footer_menu_typography',
-					'label' => __( 'Typography', 'hello-elementor' ),
+					'label' => __( 'Typography', 'bh-daiichi' ),
 					'selector' => 'footer .footer-inner .site-navigation a',
 				]
 			);
@@ -412,7 +412,7 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_copyright_section',
 			[
 				'tab' => 'hello-settings-footer',
-				'label' => __( 'Copyright', 'hello-elementor' ),
+				'label' => __( 'Copyright', 'bh-daiichi' ),
 				'conditions' => [
 					'relation' => 'and',
 					'terms' => [
@@ -430,14 +430,14 @@ class Settings_Footer extends Tab_Base {
 			'hello_footer_copyright_text',
 			[
 				'type' => Controls_Manager::TEXTAREA,
-				'default' => __( 'All rights reserved', 'hello-elementor' ),
+				'default' => __( 'All rights reserved', 'bh-daiichi' ),
 			]
 		);
 
 		$this->add_control(
 			'hello_footer_copyright_color',
 			[
-				'label' => __( 'Text Color', 'hello-elementor' ),
+				'label' => __( 'Text Color', 'bh-daiichi' ),
 				'type' => Controls_Manager::COLOR,
 				'condition' => [
 					'hello_footer_copyright_display' => 'yes',
@@ -452,7 +452,7 @@ class Settings_Footer extends Tab_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'hello_footer_copyright_typography',
-				'label' => __( 'Typography', 'hello-elementor' ),
+				'label' => __( 'Typography', 'bh-daiichi' ),
 				'condition' => [
 					'hello_footer_copyright_display' => 'yes',
 				],
@@ -476,7 +476,7 @@ class Settings_Footer extends Tab_Base {
 	public function get_additional_tab_content() {
 		if ( ! defined( 'ELEMENTOR_PRO_VERSION' ) ) {
 			return sprintf( '
-				<div class="hello-elementor elementor-nerd-box">
+				<div class="bh-daiichi elementor-nerd-box">
 					<img src="%4$s" class="elementor-nerd-box-icon">
 					<div class="elementor-nerd-box-message">
 						<p class="elementor-panel-heading-title elementor-nerd-box-title">%1$s</p>
@@ -485,14 +485,14 @@ class Settings_Footer extends Tab_Base {
 					<a class="elementor-button elementor-button-default elementor-nerd-box-link" target="_blank" href="https://elementor.com/pro/?utm_source=panel-widgets&amp;utm_campaign=gopro&amp;utm_medium=wp-dash&amp;utm_term=helloelementor">%3$s</a>
 				</div>
 				',
-				__( 'Create a custom footer with multiple options', 'hello-elementor' ),
-				__( 'Upgrade to Elementor Pro and enjoy free design and many more features', 'hello-elementor' ),
-				__( 'Go Pro', 'hello-elementor' ),
+				__( 'Create a custom footer with multiple options', 'bh-daiichi' ),
+				__( 'Upgrade to Elementor Pro and enjoy free design and many more features', 'bh-daiichi' ),
+				__( 'Go Pro', 'bh-daiichi' ),
 				get_template_directory_uri() . '/assets/images/go-pro.svg'
 			);
 		} else {
 			return sprintf( '
-				<div class="hello-elementor elementor-nerd-box">
+				<div class="bh-daiichi elementor-nerd-box">
 					<img src="%4$s" class="elementor-nerd-box-icon">
 					<div class="elementor-nerd-box-message">
 						<p class="elementor-panel-heading-title elementor-nerd-box-title">%1$s</p>
@@ -501,9 +501,9 @@ class Settings_Footer extends Tab_Base {
 					<a class="elementor-button elementor-button-success elementor-nerd-box-link" target="_blank" href="%5$s">%3$s</a>
 				</div>
 				',
-				__( 'Create a custom footer with the new Theme Builder', 'hello-elementor' ),
-				__( 'With the new Theme Builder you can jump directly into each part of your site', 'hello-elementor' ),
-				__( 'Create Footer', 'hello-elementor' ),
+				__( 'Create a custom footer with the new Theme Builder', 'bh-daiichi' ),
+				__( 'With the new Theme Builder you can jump directly into each part of your site', 'bh-daiichi' ),
+				__( 'Create Footer', 'bh-daiichi' ),
 				get_template_directory_uri() . '/assets/images/go-pro.svg',
 				get_admin_url( null, 'admin.php?page=elementor-app#/site-editor/templates/footer' )
 			);

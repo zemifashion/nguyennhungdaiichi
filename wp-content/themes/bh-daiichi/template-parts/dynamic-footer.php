@@ -30,7 +30,7 @@ $footer_nav_menu = wp_nav_menu( [
 
 			if ( $site_name && ( 'logo' !== bh_daiichi_get_setting( 'hello_footer_logo_type' ) ) || $is_editor ) : ?>
 				<h4 class="site-title <?php echo hello_show_or_hide( 'hello_footer_logo_display' ); ?>">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( 'Home', 'hello-elementor' ); ?>" rel="home">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_attr_e( 'Home', 'bh-daiichi' ); ?>" rel="home">
 						<?php echo esc_html( $site_name ); ?>
 					</a>
 				</h4>

@@ -45,8 +45,8 @@ class Elementor_Upsell extends \WP_Customize_Control {
 
 		if ( ! isset( $plugins['elementor/elementor.php'] ) ) {
 			$customizer_content .= $this->get_customizer_upsell_html(
-				__( 'Install Elementor', 'hello-elementor' ),
-				__( 'Create a cross-site Header and Footer using Elementor & Hello theme', 'hello-elementor' ),
+				__( 'Install Elementor', 'bh-daiichi' ),
+				__( 'Create a cross-site Header and Footer using Elementor & Hello theme', 'bh-daiichi' ),
 				wp_nonce_url(
 					add_query_arg(
 						[
@@ -57,31 +57,31 @@ class Elementor_Upsell extends \WP_Customize_Control {
 					),
 					'install-plugin_elementor'
 				),
-				__( 'Install &amp; Activate', 'hello-elementor' ),
+				__( 'Install &amp; Activate', 'bh-daiichi' ),
 				get_template_directory_uri() . '/assets/images/go-pro.svg'
 			);
 		} elseif ( ! defined( 'ELEMENTOR_VERSION' ) ) {
 			$customizer_content .= $this->get_customizer_upsell_html(
-				__( 'Activate Elementor', 'hello-elementor' ),
-				__( 'Create a cross-site Header and Footer using Elementor & Hello theme', 'hello-elementor' ),
+				__( 'Activate Elementor', 'bh-daiichi' ),
+				__( 'Create a cross-site Header and Footer using Elementor & Hello theme', 'bh-daiichi' ),
 				wp_nonce_url( 'plugins.php?action=activate&plugin=elementor/elementor.php', 'activate-plugin_elementor/elementor.php' ),
-				__( 'Activate Elementor', 'hello-elementor' ),
+				__( 'Activate Elementor', 'bh-daiichi' ),
 				get_template_directory_uri() . '/assets/images/go-pro.svg'
 			);
 		} elseif ( defined( 'ELEMENTOR_VERSION' ) && version_compare( ELEMENTOR_VERSION, '3.0.12', '<' ) ) {
 			$customizer_content .= $this->get_customizer_upsell_html(
-				__( 'Update Elementor', 'hello-elementor' ),
-				__( 'You need Elementor version 3.1.0 or above to create a cross-site Header and Footer.', 'hello-elementor' ),
+				__( 'Update Elementor', 'bh-daiichi' ),
+				__( 'You need Elementor version 3.1.0 or above to create a cross-site Header and Footer.', 'bh-daiichi' ),
 				wp_nonce_url( 'update-core.php' ),
-				__( 'Update Elementor', 'hello-elementor' ),
+				__( 'Update Elementor', 'bh-daiichi' ),
 				get_template_directory_uri() . '/assets/images/go-pro.svg'
 			);
 		} else {
 			$customizer_content .= $this->get_customizer_upsell_html(
-				__( 'Set Your Header &amp; Footer', 'hello-elementor' ),
-				__( 'Create cross-site Header and Footer using Elementor & Hello theme', 'hello-elementor' ),
+				__( 'Set Your Header &amp; Footer', 'bh-daiichi' ),
+				__( 'Create cross-site Header and Footer using Elementor & Hello theme', 'bh-daiichi' ),
 				wp_nonce_url( 'post.php?post=' . get_option( 'elementor_active_kit' ) . '&action=elementor' ),
-				__( 'Start Here', 'hello-elementor' ),
+				__( 'Start Here', 'bh-daiichi' ),
 				get_template_directory_uri() . '/assets/images/go-pro.svg'
 			);
 		}
