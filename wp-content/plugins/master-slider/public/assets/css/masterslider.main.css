@@ -47,6 +47,8 @@
 
 .ms-layout-partialview .ms-container { overflow: hidden; }
 
+.ms-container {margin-top: -50px !important;}
+
 .master-slider.before-init{}
 
 .ms-loading-container{

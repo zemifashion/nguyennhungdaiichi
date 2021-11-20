@@ -278,34 +278,28 @@
 </head>
 <body data-rsssl=1>
 <?php get_header(); ?>
-<section class="slider" id="home-slider">
-    <div class="slider-item">
-        <div class="banner">
-            <div class="container">
-                <div data-bg="url(https://dai-ichi.vn/wp-content/uploads/2021/07/AN-TAM-SONG-HANH-e1633800399862.png)"
-                     class="bg-fill rocket-lazyload" style=""></div>
-                <div class="slider-item__boxText"><h1 class="text-uppercase"></h1>
-                    <p></p>
-                    <button class="btn btn-danger btn-readMore"><a href="https://dai-ichi.vn/san-pham/">Xem thêm</a> <i
-                                class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="slider-item">
-        <div class="banner">
-            <div class="container">
-                <div data-bg="url(https://dai-ichi.vn/wp-content/uploads/2021/01/hai-me-con-scaled.jpg)"
-                     class="bg-fill rocket-lazyload" style=""></div>
-                <div class="slider-item__boxText"><h1 class="text-uppercase">AN PHÚC HƯNG THỊNH TOÀN DIỆN</h1>
-                    <p>Lập kế hoạch học tập cùng con yêu!</p>
-                    <button class="btn btn-danger btn-readMore"><a href="https://dai-ichi.vn/san-pham/">Xem thêm</a> <i
-                                class="fas fa-arrow-right"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<?php
+$is_elementor_theme_exist = function_exists( 'elementor_theme_do_location' );
+
+if ( is_singular() ) {
+    if ( ! $is_elementor_theme_exist || ! elementor_theme_do_location( 'single' ) ) {
+        get_template_part( 'template-parts/single' );
+    }
+} elseif ( is_archive() || is_home() ) {
+    if ( ! $is_elementor_theme_exist || ! elementor_theme_do_location( 'archive' ) ) {
+        get_template_part( 'template-parts/archive' );
+    }
+} elseif ( is_search() ) {
+    if ( ! $is_elementor_theme_exist || ! elementor_theme_do_location( 'archive' ) ) {
+        get_template_part( 'template-parts/search' );
+    }
+} else {
+    if ( ! $is_elementor_theme_exist || ! elementor_theme_do_location( 'single' ) ) {
+        get_template_part( 'template-parts/404' );
+    }
+}
+?>
+
 <section id="home-covid">
     <div class="container">
         <div class="row">
@@ -867,7 +861,8 @@
 <script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/bootstrap.js"></script>
 <script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/jquery.mmenu.all.min.js"></script>
 <script type="text/javascript" src="<?= get_template_directory_uri() ?>/js/slick.min.js"></script>
-<script type="text/javascript">$(document).ready(function ($) {
+<script type="text/javascript">
+    $(document).ready(function ($) {
         $("#menu-mobile").mmenu();
     });
     window.onscroll = function () {
@@ -883,7 +878,8 @@
         } else {
             navbar.classList.remove("sticky");
         }
-    }</script>
+    }
+</script>
 <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     (function () {
@@ -896,11 +892,8 @@
     })();</script>
 </body>
 </html>
-<script>jQuery(document).ready(function ($) {
-        // Show form on click button search
-        $('.btn-search').click(function () {
-            $('.form').toggle();
-        });
+<script>
+    jQuery(document).ready(function ($) {
 
         $('.card-covid').hover(function (e) {
             $("body").find(".imghvr-slide-up figcaption").removeClass("d-none-hv");
@@ -959,5 +952,38 @@
             slidesToShow: 1,
             slidesToScroll: 1
         });
-    });</script>
+
+        setTimeout( function() {
+            var html2mecon = '<div class="slider-item__boxText">' +
+                '<h1 class="text-uppercase">AN PHÚC HƯNG THỊNH TOÀN DIỆN</h1>' +
+                '<p>Lập kế hoạch học tập cùng con yêu!</p> ' +
+                '<button class="btn btn-danger btn-readMore">' +
+                '<a href="/san-pham/">Xem thêm</a>' +
+                '<i class="fas fa-arrow-right"></i></button></div>';
+            var htmlAntam = '<div class="slider-item__boxText">' +
+                '<h1 class="text-uppercase"></h1>' +
+                '<p></p> ' +
+                '<button class="btn btn-danger btn-readMore">' +
+                '<a href="/san-pham/">Xem thêm</a>' +
+                '<i class="fas fa-arrow-right"></i></button></div>';
+            $('#hai-me-con').each(function(){
+                $(this).find('.ms-slide-bgcont').append(html2mecon);
+            });
+            $('#an-tam-song-hanh').each(function(){
+                $(this).find('.ms-slide-bgcont').append(htmlAntam);
+            });
+        }, 1000 );
+    });
+</script>
+<style>
+    .slider-item__boxText {
+        top: 50%;
+        left: 20%;
+        position: absolute;
+    }
+    h1.text-uppercase {
+        color: #ff0000;
+    }
+    h1.text-uppercase > p {color: #ff0000;}
+</style>
 <!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1637326775 -->
