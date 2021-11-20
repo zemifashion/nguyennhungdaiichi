@@ -1133,6 +1133,7 @@ a.dvls_near_you {
 
 ul#main-menu li a {
     padding: 22px 0 !important;
+	text-decoration: none;
 }
 li#menu-item-449 ul.sub-menu {
     left: 86px;

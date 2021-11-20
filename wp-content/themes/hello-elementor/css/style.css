@@ -189,6 +189,7 @@ a {
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
+    line-height: 50px;
 }
 
 .header-bottom .header-bottom-flex {
