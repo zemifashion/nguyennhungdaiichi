@@ -63,11 +63,6 @@ if ( ! function_exists( 'hello_elementor_setup' ) ) {
 			);
 
 			/*
-			 * Editor Style.
-			 */
-			add_editor_style( 'classic-editor.css' );
-
-			/*
 			 * Gutenberg wide images.
 			 */
 			add_theme_support( 'align-wide' );
@@ -216,3 +211,8 @@ if ( ! function_exists( 'hello_elementor_body_open' ) ) {
 		}
 	}
 }
+function cc_mime_types($mimes) {
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');

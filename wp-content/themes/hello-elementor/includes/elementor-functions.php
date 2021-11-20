@@ -125,27 +125,6 @@ function hello_get_footer_layout_class() {
 	return implode( ' ', $layout_classes );
 }
 
-add_action( 'elementor/editor/after_enqueue_scripts', function() {
-	if ( hello_header_footer_experiment_active() ) {
-		$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-
-		wp_enqueue_script(
-			'hello-theme-editor',
-			get_template_directory_uri() . '/assets/js/hello-editor' . $suffix . '.js',
-			[ 'jquery', 'elementor-editor' ],
-			HELLO_ELEMENTOR_VERSION,
-			true
-		);
-
-		wp_enqueue_style(
-			'hello-editor',
-			get_template_directory_uri() . '/editor' . $suffix . '.css',
-			[],
-			HELLO_ELEMENTOR_VERSION
-		);
-	}
-} );
-
 add_action( 'wp_enqueue_scripts', function() {
 	if ( ! hello_header_footer_experiment_active() ) {
 		return;
@@ -154,8 +133,8 @@ add_action( 'wp_enqueue_scripts', function() {
 	$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
 	wp_enqueue_script(
-		'hello-theme-frontend',
-		get_template_directory_uri() . '/assets/js/hello-frontend' . $suffix . '.js',
+		'bh-daiichi',
+		get_template_directory_uri() . '/assets/js/bh-daiichi' . $suffix . '.js',
 		[ 'jquery' ],
 		'1.0.0',
 		true
