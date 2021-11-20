@@ -225,6 +225,19 @@ if ( is_singular() ) {
                     focusOnSelect: !0
                 }
             }]
+        });
+        $('.blog-slider').slick({
+            centerPadding: '60px',
+            slidesToShow: 3,
+            arrows: !0,
+            prevArrow: '<button type="button" class="slick-prev">Trước</button>',
+            nextArrow: '<button type="button" class="slick-next">Next</button>',
+            autoplay: !0,
+            autoplaySpeed: 3000,
+            responsive: [{breakpoint: 768, settings: {arrows: !1, slidesToShow: 1}}, {
+                breakpoint: 640,
+                settings: {arrows: !0, slidesToShow: 1, autoplay: !0, autoplaySpeed: 2000}
+            }]
         })
     });
 </script>

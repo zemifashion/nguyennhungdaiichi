@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52.664" height="132" viewBox="0 0 52.664 132">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_75" data-name="Rectangle 75" width="52.664" height="132" fill="#b8123e"/>
+    </clipPath>
+  </defs>
+  <g id="Group_99" data-name="Group 99" transform="translate(-885 -354)">
+    <path id="Path_96" data-name="Path 96" d="M920.656,632.976v3.73l10.162-2.092Zm0,0" transform="translate(-23.036 -180.239)" fill="#b8123e"/>
+    <path id="Path_97" data-name="Path 97" d="M940.735,618.612v-2.1l-8.262.765Zm0,0" transform="translate(-30.671 -169.604)" fill="#b8123e"/>
+    <path id="Path_98" data-name="Path 98" d="M920.656,655.09v1.15a6.222,6.222,0,1,0,12.444,0v-3.624c-12.928,2.66-11.949,2.493-12.444,2.473Zm0,0" transform="translate(-23.036 -192.928)" fill="#b8123e"/>
+    <path id="Path_99" data-name="Path 99" d="M950.743,365.473A10.746,10.746,0,1,1,940,354.726a10.746,10.746,0,0,1,10.747,10.747Zm0,0" transform="translate(-28.589 -0.469)" fill="#b8123e"/>
+    <g id="Group_98" data-name="Group 98" transform="translate(885 354)">
+      <g id="Group_97" data-name="Group 97" clip-path="url(#clip-path)">
+        <path id="Path_100" data-name="Path 100" d="M950.887,520.529a5.2,5.2,0,0,0,6.582,3.231l-3.351-9.815a5.19,5.19,0,0,0-3.231,6.584Zm0,0" transform="translate(-927.387 -457.336)" fill="#b8123e"/>
+        <path id="Path_101" data-name="Path 101" d="M937.712,454.8l-.047-9.412-.04-8.048a12.3,12.3,0,0,0-12.271-12.209H897.462a12.3,12.3,0,0,0-12.271,12.209L885,475.436a5.18,5.18,0,0,0,4.875,5.194v48.156a2.831,2.831,0,0,0,5.663,0c0-3.612.024-91.392.024-91.392h0a1.084,1.084,0,0,1,2.166.062l-.108,50.878c13.108-1.213,12.161-1.136,12.444-1.128v-11a1.383,1.383,0,0,1,1.383-1.384,1.35,1.35,0,0,1,1.351,1.356c-.03,8.053-.047,49.215-.047,49.215a6.222,6.222,0,1,0,12.444,0l0-56.485-8.285,2.83a10.848,10.848,0,0,1-7.011-20.533l17.394-5.94.023,4.723,3.773,10.923,3.112-1.063h0a5.207,5.207,0,0,0,3.5-5.047Zm0,0" transform="translate(-885 -399.957)" fill="#b8123e"/>
+      </g>
+    </g>
+  </g>
+</svg>

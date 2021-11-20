@@ -1516,3 +1516,12 @@ ul#menu-mobile {
 nav#menu-mobile {
     z-index: 9999
 }
+.slick-prev:before, .slick-next:before {
+    opacity: 1;
+    color: #3E3E3E;
+    transition: .3s ease all
+}
+
+.slick-prev:hover:before, .slick-next:hover:before {
+    color: #d31145
+}
