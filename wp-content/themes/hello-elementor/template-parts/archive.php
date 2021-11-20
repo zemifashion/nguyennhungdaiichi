@@ -12,12 +12,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 <main class="site-main" role="main">
 
 	<?php if ( apply_filters( 'hello_elementor_page_title', true ) ) : ?>
-		<header class="page-header">
-			<?php
-			the_archive_title( '<h1 class="entry-title">', '</h1>' );
-			the_archive_description( '<p class="archive-description">', '</p>' );
-			?>
-		</header>
 	<?php endif; ?>
 	<div class="page-content">
 		<?php
