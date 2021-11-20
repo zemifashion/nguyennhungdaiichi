@@ -41,17 +41,17 @@ $header_nav_menu = wp_nav_menu( [
                 <div class="topbar-social">
                     <ul>
                         <li>
-                            <a href="https://www.facebook.com/DaiichiLife.TuVanBaoHiemChuyenNghiep/">
+                            <a target="_blank" href="https://www.facebook.com/profile.php?id=100020193817902/">
                                 <img src="<?= get_template_directory_uri() ?>/image/facebook@2x.png" alt="facebook">
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/channel/UC0qOfWon7JBVAs_DxQudvwQ">
+                            <a href="javascript:void(0)">
                                 <img src="<?= get_template_directory_uri() ?>/image/youtube@2x.png" alt="youtube">
                             </a>
                         </li>
                         <li>
-                            <a href="https://zalo.me/0879565666">
+                            <a target="_blank" href="https://zalo.me/0971120290">
                                 <img src="<?= get_template_directory_uri() ?>/image/Zalo@2x.png" alt="zalo">
                             </a>
                         </li>
@@ -59,8 +59,8 @@ $header_nav_menu = wp_nav_menu( [
                 </div>
                 <div class="topbar-nav">
                     <ul>
-                        <li><a href="https://dai-ichi.vn/tuyen-dung/">Ứng tuyển</a></li>
-                        <li><a href="https://dai-ichi.vn/lien-he/">Liên hệ</a></li>
+                        <li><a href="/tuyen-dung/">Ứng tuyển</a></li>
+                        <li><a href="/lien-he/">Liên hệ</a></li>
                     </ul>
                 </div>
             </div>
@@ -78,13 +78,13 @@ $header_nav_menu = wp_nav_menu( [
                 <div class="header-main__right">
                     <div class="contact-box">
                         <div class="contact-box__icon"><i class="fas fa-envelope"></i></div>
-                        <div class="contact-box__text"><strong><a href="mailto:btl.daiichivn@gmail.com">btl.daiichivn@gmail.com</a></strong>
+                        <div class="contact-box__text"><strong><a href="mailto:baohiem.daiichilifehanoi1@gmail.com">baohiem.daiichilifehanoi1@gmail.com</a></strong>
                             <span>Gửi thông tin cho chúng tôi</span>
                         </div>
                     </div>
                     <div class="contact-box">
                         <div class="contact-box__icon"><i class="fas fa-phone-square-alt"></i></div>
-                        <div class="contact-box__text"><strong><a href="tel:0879565666">0879 565 666</a></strong><span>Liên hệ nhanh cho chúng tôi</span>
+                        <div class="contact-box__text"><strong><a href="tel:0971120290">0971 120 290</a></strong><span>Liên hệ nhanh cho chúng tôi</span>
                         </div>
                     </div>
                     <button class="btn btn-outline btn-apply text-uppercase"><a href="#"><?= __('Tham gia Dai-ichi')?></a></button>
