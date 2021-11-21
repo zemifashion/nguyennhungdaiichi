@@ -33,7 +33,6 @@
     <link rel='stylesheet' id='aia-style-css' href='<?= get_template_directory_uri() ?>/css/style-1.0.0.css' media='all'/>
     <link rel='stylesheet' id='msl-main-css' href='<?= get_template_directory_uri() ?>/css/masterslider.main-3.7.10.css' media='all'/>
     <link rel='stylesheet' id='msl-custom-css' href='<?= get_template_directory_uri() ?>/css/custom-1.6.css' media='all'/>
-
     <style>
         .recentcomments a {
             display: inline !important;
@@ -238,7 +237,7 @@ if ( is_singular() ) {
                 breakpoint: 640,
                 settings: {arrows: !0, slidesToShow: 1, autoplay: !0, autoplaySpeed: 2000}
             }]
-        })
+        });
     });
 </script>
 </body>
