@@ -27,12 +27,13 @@
             padding: 0 !important
         }
     </style>
-    <link rel='stylesheet' id='wp-block-library-css' href='<?= get_template_directory_uri() ?>/css/style.min.css' media='all'/>
-    <link rel='stylesheet' id='contact-form-7-css' href='<?= get_template_directory_uri() ?>/css/styles-5.5.2.css' media='all'/>
-    <link rel='stylesheet' id='sanpop-public-style-css' href='<?= get_template_directory_uri() ?>/css/sanpop-public-style-1.1.1.css' media='all'/>
-    <link rel='stylesheet' id='aia-style-css' href='<?= get_template_directory_uri() ?>/css/style-1.0.0.css' media='all'/>
-    <link rel='stylesheet' id='msl-main-css' href='<?= get_template_directory_uri() ?>/css/masterslider.main-3.7.10.css' media='all'/>
-    <link rel='stylesheet' id='msl-custom-css' href='<?= get_template_directory_uri() ?>/css/custom-1.6.css' media='all'/>
+    <link rel='stylesheet' href='<?= get_template_directory_uri() ?>/css/style.min.css' media='all'/>
+    <link rel='stylesheet' href='<?= get_template_directory_uri() ?>/css/styles-5.5.2.css' media='all'/>
+    <link rel='stylesheet' href='<?= get_template_directory_uri() ?>/css/sanpop-public-style-1.1.1.css' media='all'/>
+    <link rel='stylesheet' href='<?= get_template_directory_uri() ?>/css/style-1.0.0.css' media='all'/>
+    <link rel='stylesheet' href='<?= get_template_directory_uri() ?>/css/masterslider.main-3.7.10.css' media='all'/>
+    <link rel='stylesheet' href='<?= get_template_directory_uri() ?>/css/custom-1.6.css' media='all'/>
+    <link rel='stylesheet' href='<?= get_template_directory_uri() ?>/css/daiichi-theme.css' media='all'/>
     <style>
         .recentcomments a {
             display: inline !important;

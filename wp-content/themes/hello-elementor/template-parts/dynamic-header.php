@@ -79,7 +79,7 @@ $header_nav_menu = wp_nav_menu( [
                 <div class="header-main__right">
                     <div class="contact-box">
                         <div class="contact-box__icon"><i class="fas fa-envelope"></i></div>
-                        <div class="contact-box__text"><strong><a href="mailto:baohiem.daiichilifehanoi1@gmail.com">baohiem.daiichilifehanoi1@gmail.com</a></strong>
+                        <div class="contact-box__text"><strong><a href="mailto:nhungnguyen90.daiichi@gmail.com">nhungnguyen90.daiichi@gmail.com</a></strong>
                             <span>Gửi thông tin cho chúng tôi</span>
                         </div>
                     </div>

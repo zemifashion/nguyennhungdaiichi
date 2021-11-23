@@ -19,7 +19,7 @@ $footer_nav_menu = wp_nav_menu( [
 	'echo' => false,
 ] );
 ?>
-<footer>
+<footer class="footer-theme">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -37,7 +37,7 @@ $footer_nav_menu = wp_nav_menu( [
                             <ul>
                                 <li><i class="fas fa-phone-alt"></i>Số điện thoại:&nbsp<a href="tel:0971120290"><strong><a
                                                     href="tel:0971120290">0971120290</a></strong></a></li>
-                                <li><i class="fas fa-envelope"></i>Email:&nbsp<a href="baohiem.daiichilifehanoi1@gmail.com">baohiem.daiichilifehanoi1@gmail.com</a>
+                                <li><i class="fas fa-envelope"></i>Email:&nbsp<a href="nhungnguyen90.daiichi@gmail.com">nhungnguyen90.daiichi@gmail.com</a>
                                 </li>
                                 <li><i class="fas fa-map-marker-alt"></i>Địa chỉ: Tầng 24, tòa Viwaseen Tower, 48 Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội</li>
                             </ul>
