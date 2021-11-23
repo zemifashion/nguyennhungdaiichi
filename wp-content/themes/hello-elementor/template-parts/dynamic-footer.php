@@ -25,7 +25,7 @@ $footer_nav_menu = wp_nav_menu( [
             <div class="col-md-12">
                 <div class="footer-main">
                     <div class="footer-left-logo">
-                        <img src="<?= get_template_directory_uri() ?>/image/dai-ichi-logo.png" width="200" alt="">
+                        <img src="https://nguyennhungdaiichi.com/wp-content/uploads/2021/11/dai-ichi-logo.png" width="200" alt="">
                     </div>
                     <div class="footer-right"><p><strong>Liên hệ với Dai-ichi</strong> - Thông qua số HOTLINE</p><p style="color: white">0971120290</p></div>
                 </div>
