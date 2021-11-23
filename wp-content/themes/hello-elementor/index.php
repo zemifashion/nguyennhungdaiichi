@@ -123,19 +123,9 @@ if ( is_singular() ) {
     jQuery(document).ready(function ($) {
         $('.card-covid').hover(function (e) {
             $("body").find(".imghvr-slide-up figcaption").removeClass("d-none-hv");
-        })
-
-        $('#home-slider').slick({
-            dots: true,
-            infinite: true,
-            speed: 800,
-            autoplay: false,
-            autoplaySpeed: 2000,
-            slidesToShow: 1,
-            slidesToScroll: 1
         });
 
-        $('.home-services__slider').slick({
+        $('.home-services-slider').slick({
             dots: true,
             infinite: true,
             speed: 800,
