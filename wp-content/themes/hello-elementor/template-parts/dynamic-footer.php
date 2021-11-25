@@ -19,13 +19,13 @@ $footer_nav_menu = wp_nav_menu( [
 	'echo' => false,
 ] );
 ?>
-<footer class="footer-theme">
+<footer style="margin-bottom: -35px">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="footer-main">
                     <div class="footer-left-logo">
-                        <img src="https://nguyennhungdaiichi.com/wp-content/uploads/2021/11/dai-ichi-logo.png" width="200" alt="">
+                        <img src="<?= get_template_directory_uri() ?>/image/dai-ichi-logo.png" width="200" alt="">
                     </div>
                     <div class="footer-right"><p><strong>Liên hệ với Dai-ichi</strong> - Thông qua số HOTLINE</p><p style="color: white">0971120290</p></div>
                 </div>
@@ -37,7 +37,7 @@ $footer_nav_menu = wp_nav_menu( [
                             <ul>
                                 <li><i class="fas fa-phone-alt"></i>Số điện thoại:&nbsp<a href="tel:0971120290"><strong><a
                                                     href="tel:0971120290">0971120290</a></strong></a></li>
-                                <li><i class="fas fa-envelope"></i>Email:&nbsp<a href="nhungnguyen90.daiichi@gmail.com">nhungnguyen90.daiichi@gmail.com</a>
+                                <li><i class="fas fa-envelope"></i>Email:&nbsp<a href="baohiem.daiichilifehanoi1@gmail.com">baohiem.daiichilifehanoi1@gmail.com</a>
                                 </li>
                                 <li><i class="fas fa-map-marker-alt"></i>Địa chỉ: Tầng 24, tòa Viwaseen Tower, 48 Tố Hữu, Trung Văn, Nam Từ Liêm, Hà Nội</li>
                             </ul>
