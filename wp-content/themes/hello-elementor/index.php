@@ -2,18 +2,17 @@
 <html lang="en">
 <head>
     <title>Bảo Hiểm Dai-ichi life Việt Nam</title>
-    <meta name="description" content="Trang chủ chính thức của Phòng Kinh Doanh Hà Nội 214 - công ty TNHH Bảo Hiểm Nhân Thọ Dai-ichi Việt Nam. Tư vấn, giải đáp thắc mắc cho khách hàng về Dai-ichi"/>
+    <meta name="description" content="Trang chủ chính thức của Phòng Kinh Doanh Hà Nội - công ty TNHH Bảo Hiểm Nhân Thọ Dai-ichi Việt Nam. Tư vấn, giải đáp thắc mắc cho khách hàng về Dai-ichi"/>
     <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
     <meta property="og:locale" content="vi_VN"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Trang Chủ - Dai-ichi HN214"/>
-    <meta property="og:description" content="Trang chủ chính thức của Phòng Kinh Doanh Hà Nội 214 - công ty TNHH Bảo Hiểm Nhân Thọ Dai-ichi Việt Nam. Tư vấn, giải đáp thắc mắc cho khách hàng về Dai-ichi"/>
+    <meta property="og:title" content="Trang Chủ - Bảo Hiểm Dai-ichi life Việt Nam"/>
+    <meta property="og:description" content="Trang chủ chính thức của Phòng Kinh Doanh Hà Nội - công ty TNHH Bảo Hiểm Nhân Thọ Dai-ichi Việt Nam. Tư vấn, giải đáp thắc mắc cho khách hàng về Dai-ichi"/>
     <meta property="og:url" content="https://nguyennhungdaiichi.com/"/>
-    <meta property="og:site_name" content="Dai-ichi HN214"/>
-    <meta property="og:updated_time" content="2021-10-10T00:27:29+07:00"/>
+    <meta property="og:site_name" content="Bảo Hiểm Dai-ichi life Việt Nam"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="Trang Chủ - Dai-ichi HN214"/>
-    <meta name="twitter:description" content="Trang chủ chính thức của Phòng Kinh Doanh Hà Nội 214 - công ty TNHH Bảo Hiểm Nhân Thọ Dai-ichi Việt Nam. Tư vấn, giải đáp thắc mắc cho khách hàng về Dai-ichi"/>
+    <meta name="twitter:title" content="Trang Chủ - Bảo Hiểm Dai-ichi life Việt Nam"/>
+    <meta name="twitter:description" content="Trang chủ chính thức của Phòng Kinh Doanh Hà Nội - công ty TNHH Bảo Hiểm Nhân Thọ Dai-ichi Việt Nam. Tư vấn, giải đáp thắc mắc cho khách hàng về Dai-ichi"/>
     <style>
         img.wp-smiley, img.emoji {
             display: inline !important;
