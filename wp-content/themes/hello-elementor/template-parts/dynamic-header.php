@@ -73,7 +73,7 @@ $header_nav_menu = wp_nav_menu( [
                     <a href="#menu-mobile" class="menu-mobile icon-menu-mobile">
                         <i class="fa fa-bars"></i><span></span></a>
                     <a class="navbar-brand order-first order-md-0 mx-0 header-main__logo" href="/">
-                        <img src="https://nguyennhungdaiichi.com/wp-content/uploads/2021/11/dai-ichi-logo.png" alt="" width="200">
+                        <img src="https://nguyennhungdaiichi.com/wp-content/uploads/2021/11/dai-ichi-logo.png" alt="Dai ichi Logo" width="200">
                     </a>
                 </div>
                 <div class="header-main__right">
