@@ -18,7 +18,7 @@
                         <img src="https://nguyennhungdaiichi.com/wp-content/uploads/2021/11/millennial-group-young-businessmen.png" alt="">
                         <div class="df-overlay"><span>vị trí trợ lý trưởng nhóm</span></div>
                     </a>
-                    <div class="df-link"><a href="https://dai-ichi.vn/tuyen-dung/">Ứng tuyển</a></div>
+                    <div class="df-link"><a href="/tuyen-dung/">Ứng tuyển</a></div>
                 </div>
             </div>
             <div class="col-md-4">
