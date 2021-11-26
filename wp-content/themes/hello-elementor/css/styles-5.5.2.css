@@ -157,3 +157,67 @@ form.submitting .wpcf7-spinner {
 .wpcf7 input[type="tel"] {
 	direction: ltr;
 }
+
+.wpcf7-form-control-wrap.ho-va-ten input[type=text],.wpcf7-form-control-wrap.phone-number input[type=tel] {
+	width: 100%;
+	padding: 9px 20px;
+	margin: 2px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	text-align: left;
+	box-sizing: border-box;
+}
+
+.form-dang-ky-goi-bao-hiem {
+	border-style: solid;
+	border-color: #E42323;
+	transition: background 0.3s,border 0.3s,border-radius 0.3s,box-shadow 0.3s;
+	padding: 10px;
+}
+.bh-elementor-widget-container {
+	padding: 10px 10px 10px 10px;
+	background-color: transparent;
+	background-image: linear-gradient(
+			180deg,#22222280 0%,#F2E7E9 100%);
+}
+h2.bh-elementor-heading-title {
+	color: #A41A1F;
+	font-size: 30px;
+	text-transform: uppercase;
+	line-height: 1.5em;
+	text-shadow: 0 0 10px rgb(0 0 0 / 30%);
+	text-align: center;
+}
+form.wpcf7-form >span {
+	line-height: 40px;
+}
+.wpcf7-form-control-wrap.ho-va-ten,.wpcf7-form-control-wrap.phone-number{
+	margin: 25px;
+}
+.cho-rieng-con,.cho-ban-than,.cho-hai-me-con,.cho-gia-dinh {
+	margin: 5px;
+}
+/* Desktops and laptops ----------- */
+@media (min-width: 768px) and (max-width: 979px) {
+	#form-submit {
+		margin-left: 25px;
+	}
+}
+@media (min-width: 1200px) {
+	#form-submit {
+		margin-left: 25px;
+	}
+}
+
+@media only screen and (max-device-width: 480px) {
+	.wpcf7-form-control-wrap.ho-va-ten,.wpcf7-form-control-wrap.phone-number{
+		margin: 0;
+	}
+	.cho-rieng-con,.cho-ban-than,.cho-hai-me-con,.cho-gia-dinh {
+		margin-left: -8px;
+	}
+	#form-submit {
+		margin-left: 0;
+	}
+}
