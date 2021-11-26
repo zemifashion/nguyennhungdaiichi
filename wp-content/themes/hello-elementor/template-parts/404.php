@@ -9,7 +9,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 ?>
-<link type="text/css" rel="stylesheet" href="https://dai-ichi.vn/wp-content/themes/aia/page-templates/css/404-style.css">
 <main class="site-main" role="main">
 	<?php if ( apply_filters( 'hello_elementor_page_title', true ) ) : ?>
         <div id="notfound">

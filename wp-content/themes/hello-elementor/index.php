@@ -44,8 +44,9 @@
     <link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri() ?>/css/slick-theme.css"/>
     <link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri() ?>/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri() ?>/css/menu-mobile.css"/>
+    <link rel="stylesheet" type="text/css" href="<?= get_template_directory_uri() ?>/css/404-style.css">
 </head>
-<body data-rsssl=1>
+<body>
 <?php get_header(); ?>
 <?php
 $is_elementor_theme_exist = function_exists( 'elementor_theme_do_location' );
