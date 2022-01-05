@@ -256,7 +256,10 @@ form.wpcf7-form >span {
 		width:100%;
 	}
 	.form-dkbh-elementor-widget-container form p span.ho-va-ten input[type=text],
-	.form-dkbh-elementor-widget-container form p span.phone-number input[type=tel]{
+	.form-dkbh-elementor-widget-container form p span.phone-number input[type=tel],
+	.form-elementor-widget-container form p span.ho-va-ten input[type=text],
+	.form-elementor-widget-container form p span.phone-number input[type=tel]
+	{
 		width : 95% !important;
 		margin-bottom: 10px;
 	}
@@ -291,7 +294,10 @@ form.wpcf7-form >span {
 /* default iPad screens */
 @media only screen and (device-width: 768px) {
 	.form-dkbh-elementor-widget-container form p span.ho-va-ten input[type=text],
-	.form-dkbh-elementor-widget-container form p span.phone-number input[type=tel]{
+	.form-dkbh-elementor-widget-container form p span.phone-number input[type=tel],
+	.form-elementor-widget-container form p span.ho-va-ten input[type=text],
+	.form-elementor-widget-container form p span.phone-number input[type=tel]
+	{
 		width : 92% !important;
 		margin-bottom: 10px;
 	}
